@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	transition: all 0.5s ease-in-out;
+	scroll-behavior: smooth;
+}
+.header{
+	width: 100%;
+	padding: 10px 0;
+	background: darkred;
+	text-align: center;
+}
+.header h1{
+	font-size: 35px;
+	color: white;
+	font-weight: 500;
+	letter-spacing: 2px;
+	padding-bottom: 1rem;
+}
+button{
+	width: 7rem;
+	padding: 5px 8px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+button a{
+	text-decoration: none;
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-size: 400;
+	color: black;
+}
+button:hover,a:hover{
+	background: orangered;
+	transition: .3s ease-out;
+	cursor: pointer;
+	color: white;
+}
+.maps{
+	width: 80%;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.maps iframe{
+	justify-content: center;
+	margin-left: 10rem;
+	margin-top: 2rem;
+}

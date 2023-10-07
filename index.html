@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-----font family for google---------->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<!---/////////////////////////////----->
+	<!-----google link for icons----------->
+	<script src="https://kit.fontawesome.com/b24f4d3eaf.js" crossorigin="anonymous"></script>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<!---/////////////////////////////----->
+	<!----slideshow carasal for images------>
+	<script src="path-to-the-file/splide.min.js"></script>
+	<!-- Link to the file hosted on your server, -->
+	<link rel="stylesheet" href="path-to-the-file/splide.min.css">
+	<!-- or link to the CDN -->
+	<link rel="stylesheet" href="url-to-cdn/splide.min.css">
+	<!--///////////////////////////////---->
+	<link rel="shortcut icon" href="images/kfc logo.png">
+	<link rel="stylesheet" href="style.css">
+	<title>KFC Landing Page</title>
+</head>
+<body>
+	<!----------start off point-------->
+	<!----///////////////////////------>
+	<div class="header" id="top">
+		<img src="images/kfc logo.png" class="logo" alt="logo">
+
+		<ul>
+			<li>
+				<a href="#" class="activer">HOME</a>
+				<a href="#about-us">ABOUT</a>
+				<a href="#menu">MENU</a>
+				<a href="stores/stores.html">STORES</a>
+				<a href="#contact">CONTACT</a>
+			</li>
+		</ul>
+
+		<div class="header-icon">
+			<ion-icon name="notifications-circle-outline"></ion-icon>
+		</div>
+	</div>
+
+	<section id="main">
+		<div class="container">
+			<div class="text-box">
+				<h1>Welcome! <ion-icon name="fast-food-outline"></ion-icon class="main-icon"></h1>
+				<h2><span>KFC</span> Its <span>Finger</span></h2>
+				<h3>Licking <span>Good</span></h3>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+
+				<button class="textbox-btn">
+					<a href="#">Specials</a>
+				</button>
+			</div>
+			<div class="banner-img">
+				<img src="images/banner1.png" alt="image">
+			</div>
+		</div>
+	</section>
+	<section id="about-us">
+		<h1>About Us</h1>
+		<div class="about-box">
+			<div class="about-text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+
+				<button class="about-btn">
+					<a href="#">View More</a>
+				</button>
+			</div>
+
+			<div class="carasal">
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+					  <div class="numbertext">0 / 5</div>
+					  <img src="images/banner2.png" style="width:100%">
+					  <div class="text">Regular Burger</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 5</div>
+					  <img src="images/pic1.png" style="width:100%">
+					  <div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 5</div>
+					  <img src="images/pic2.png" style="width:100%">
+					  <div class="text">Meal 2</div>
+					</div>
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">3 / 5</div>
+					  <img src="images/pic3.png" style="width:100%">
+					  <div class="text">Tripple Burger</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">4 / 5</div>
+					  <img src="images/pic4.png" style="width:100%">
+					  <div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">5 / 5</div>
+					  <img src="images/pic5.png" style="width:100%">
+					  <div class="text"></div>
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+					
+					</div>
+					<br>
+					
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(4)"></span> 
+					  <span class="dot" onclick="currentSlide(5)"></span> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="menu">
+		<h4>Menu List</h4>
+
+		<div class="menu-list">
+			<div class="menu-images">
+				<div class="card">
+					<img src="images/img1.jpg" class="menu-image">
+					<div class="card-text">
+						<h1>KFC Wrap</h1>
+						<h2>R29.99</h2>
+					</div>
+				</div>
+				<div class="card">
+					<img src="images/img2.jpg" class="menu-image">
+					<div class="card-text">
+						<h1>Zinger Spicy Burger</h1>
+						<h2>R45.99</h2>
+					</div>
+				</div>
+				<div class="card">
+					<img src="images/img3.jpg" class="menu-image">
+					<div class="card-text">
+						<h1>KFC LunchBox</h1>
+						<h2>R60.99</h2>
+					</div>
+				</div>
+				<div class="card">
+					<img src="images/img4.jpg" class="menu-image">
+					<div class="card-text">
+						<h1>KFC Snack Meal</h1>
+						<h2>R29.99</h2>
+					</div>
+				</div>
+				<div class="card">
+					<img src="images/img6.jpg" class="menu-image">
+					<div class="card-text">
+						<h1>Feast Meal</h1>
+						<h2>R70.99</h2>
+					</div>
+				</div>
+				<div class="card">
+					<img src="images/img7.jpg" class="menu-image">
+					<div class="card-text">
+						<h1>KFC Regular Meal</h1>
+						<h2>R49.99</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="book">
+				<h1>Choose your Drink</h1>
+				<div class="book-tab">
+					<main class="sec">
+
+						<div class="content">
+							<div class="imgBox">
+								<img src="coke.png" class="coke">
+							</div>
+						</div>
+
+						<ul class="thumb">
+							<li>
+								<img src="coke/coke.png" onclick="imgSlider('coke/coke.png');">
+							</li>
+							<li>
+								<img src="coke/img1.png" onclick="imgSlider('coke/img1.png');">
+							</li>
+							<li>
+								<img src="coke/img2.png" onclick="imgSlider('coke/img2.png');">
+							</li>
+							<li>
+								<img src="coke/img3.png" onclick="imgSlider('coke/img3.png');">
+							</li>
+							<li>
+								<img src="coke/img5.png" onclick="imgSlider('coke/img5.png');">
+							</li>
+							<li>
+								<img src="coke/img6.png" onclick="imgSlider('coke/img6.png');">
+							</li>
+							
+						</ul>
+					</main>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h1>Contact us</h1>
+
+		<div class="contact-box">
+			<p>If you’ve got any queries or concerns, please drop us a line and we'll get back to you in the quickest time imaginable!</p>
+
+		<div class="container-box">
+			<div class="box-text">
+				<div class="box-1">
+					<h2>Office Address</h2>
+					<ul>
+						<li>
+							Knightsbridge Office Park
+						</li>
+						<li>
+							33 Sloane Street
+						</li>
+						<li>
+							Bryanston
+						</li>
+						<li>
+							2191
+						</li>
+					</ul>
+				</div>
+
+				<div class="box-2">
+					<h2>Contact No</h2>
+					<ol>
+						<li>0860 100 222</li>
+					</ol>
+				</div>
+			</div>
+
+			<br>
+
+			<form>
+				<h3> Your Info</h3>
+
+				 <input type="text" name="Name" placeholder="Name" required>
+
+				 <input type="text" name="Surname" placeholder="Surname" required>
+				 <br>
+				 <input type="email" name="Email address" placeholder="Email Address" required>
+
+				 <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+
+				 <br>
+				 <input type="submit" value="Submit" class="form-btn" required>
+			</form>
+		</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="footer-links">
+			<h1>Contact</h1>
+			<ul>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				<li>
+					<a href="#contact">Contact Us</a>
+				</li>
+				<li>
+					<a href="#">Careers</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-links">
+			<h1>Menu</h1>
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#about-us">About Us</a>
+				</li>
+				<li>
+					<a href="#menu">Menu</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-links">
+			<h1>Delivery</h1>
+			<ul>
+				<li>
+					<a href="#"><ion-icon name="fast-food-outline"></ion-icon> Mr D</a>
+				</li>
+				<li>
+					<a href="#"><ion-icon name="fast-food-outline"></ion-icon> Uber Eats</a>
+				</li>
+				<li>
+					<a href="#"><ion-icon name="fast-food-outline"></ion-icon> Bolt Food</a>
+				</li>
+				<li>
+					<a href="#"><ion-icon name="fast-food-outline"></ion-icon> Whatsapp</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<footer id="footer-end">
+		<p>Designed by <strong>John Mususa</strong></p>
+	</footer>
+</body>
+	<!----javascript for slideshow images------->
+	<!----/////////////////////////////////----->
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.coke').src = anything;
+		}
+	</script>
+</html>
