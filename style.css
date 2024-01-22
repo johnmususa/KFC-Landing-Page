@@ -84,17 +84,18 @@
 /*/////////////////////////////*/
 #main{
 	width: 100%;
-	height: 55vh;
-	padding: 10px 0;
+	padding: 20px 0;
+	flex-grow: 1;
 	margin-bottom: 1rem;
 	background: #ffffff;
 	scroll-behavior: smooth;
 }
 .container{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	width: 83%;
+	width: 90%;
+	margin: auto;
 	flex-grow: 1;
 	padding-top: 5rem;
 	margin-left: auto;
@@ -108,7 +109,7 @@
 	margin-bottom: 5px;
 }
 .text-box h2{
-	font-size: 55px;
+	font-size: 56px;
 	color: black;
 	letter-spacing: 10px;
 	text-transform: uppercase;
@@ -125,31 +126,30 @@
 	color: darkred;
 }
 .text-box h3{
-	font-size: 37px;
+	font-size: 38px;
 	color: black;
 	letter-spacing: 6px;
 	font-family: 'Lilita One', cursive;
-	/*font-family: 'Dela Gothic One', cursive;*/
 	font-weight: 400;
 	margin-bottom: 2rem;
 }
 .text-box p{
-	width: 77%;
+	width: 76%;
 	max-width: 600;
 	text-align: left;
 	color: black;
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 450;
 	letter-spacing: 1px;
-	line-height: 23px;
+	line-height: 28px;
 	margin-bottom: 1.5rem;
 }
 .textbox-btn{
-	width: 9rem;
+	width: 10rem;
 	outline: none;
 	border:none;
 	background: darkred;
-	padding: 8px 15px;
+	padding: 9px 15px;
 	border-radius: 20px;
 	cursor: pointer;
 }
@@ -169,12 +169,12 @@
 	cursor: pointer;
 }
 .banner-img{
-	width: 150%;
-	height: 30%;
+	width: 160%;
+	height: 40%;
 }
 .banner-img img{
 	height: 350px;
-	width: 120%;
+	width: 100%;
 }
 /*//////about us sec///////*/
 /*////////////////////////*/
@@ -182,12 +182,11 @@
 	width: 100%;
 	padding: 10px 0;
 	scroll-behavior: smooth;
-	margin-top: 7rem;
 }
 #about-us h1{
 	text-align: center;
 	color: black;
-	padding-top: 20px;
+	padding-top: 5px;
 	font-size: 35px;
 	font-family: 'Lilita One', cursive;
 	font-weight: 300;
@@ -210,16 +209,16 @@
 	font-size: 14px;
 	letter-spacing: 1px;
 	color: black;
-	font-weight: 400;
-	line-height: 25px;
+	font-weight: 450;
+	line-height: 28px;
 	margin-bottom: 1.5rem;
 }
 .about-btn{
-	width: 9rem;
+	width: 10rem;
 	outline: none;
 	border:none;
 	background: darkred;
-	padding: 8px 20px;
+	padding: 9px 23px;
 	border-radius: 20px;
 }
 .about-btn a{
@@ -238,20 +237,22 @@
 	width: 45%;
 	margin-left: 6rem;
 	flex-grow: 1;
+	flex-grow: 1;
 }
 .mySlides {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 750px;
   max-height: 900px;
   position: relative;
   margin: auto;
+  flex-grow: 1;
   justify-content: center;
 }
 .mySlides img{
-	padding-left: 20px;
+	padding-left: 21px;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -367,7 +368,8 @@ img {vertical-align: middle;}
 }
 .menu-images .card{
 	max-width: 100%;
-	max-height: 90%;
+	max-height: 100%;
+	flex-grow: 1;
 	overflow: hidden;
 	padding-top: 5px;
 	border: 1px solid grey;
@@ -428,11 +430,12 @@ main{
 	position: relative;
 	background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
 	border-radius: 10px;
+	flex-grow: 1;
 }
 .content .imgBox{
 	width: 400px;
 	display: flex;
-	padding-right: 8rem;
+	padding-right: 6rem;
 	justify-content: flex-end;
 }
 .content .imgBox img{
@@ -468,6 +471,7 @@ main{
 #contact{
 	width: 100%;
 	padding-top: 40px;
+	flex-grow: 1;
 	scroll-behavior: smooth;
 }
 #contact h1{
@@ -656,7 +660,7 @@ form .form-btn{
 /*///////////////////////////////////*/
 /*//////Start off responsive view///*/
 /*/////////////////////////////////*/
-@media(max-width:1240px){
+@media screen and (max-width:1240px){
 	.header{
 		width: 100%;
 		display: flex;
@@ -698,8 +702,7 @@ form .form-btn{
 	}
 	#main{
 		width: 100%;
-		padding: 10px 0;
-		height: 50vh;
+		padding: 15px 0;
 		margin-bottom: 1rem;
 		background: #ffffff;
 		scroll-behavior: smooth;
@@ -708,7 +711,8 @@ form .form-btn{
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		width: 83%;
+		width: 87%;
+		margin: auto;
 		flex-grow: 1;
 		padding-top: 5rem;
 		margin-left: auto;
@@ -747,22 +751,22 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 80%;
+		width: 78%;
 		max-width: 600;
 		text-align: left;
 		color: black;
 		font-size: 14px;
-		font-weight: 400;
+		font-weight: 450;
 		letter-spacing: 1px;
-		line-height: 25px;
+		line-height: 27px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 9rem;
+		width: 10rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 8px 18px;
+		padding: 9px 18px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
@@ -775,23 +779,22 @@ form .form-btn{
 		text-decoration: none;
 	}
 	.banner-img{
-		width: 147%;
+		width: 140%;
 		height: 40%;
 	}
 	.banner-img img{
 		height: 350px;
 		padding-right: 20px;
-		width: 135%;
+		width: 120%;
 	}
 	#about-us{
 		width: 100%;
-		margin-top: 14rem;
 		scroll-behavior: smooth;
 	}
 	#about-us h1{
 		text-align: center;
 		color: black;
-		padding-top:10px;
+		padding-top:5px;
 		font-size: 35px;
 		font-family: 'Lilita One', cursive;
 		font-weight: 300;
@@ -799,20 +802,20 @@ form .form-btn{
 		letter-spacing: 4px;
 	}
 	.about-text{
-		width: 	45%;
+		width: 	47%;
 		max-width: 600;
 	}
 	.about-text p{
 		font-size: 15px;
 		letter-spacing: 1px;
 		color: black;
-		font-weight: 400;
-		line-height: 25px;
+		font-weight: 450;
+		line-height: 27px;
 		margin-bottom: 1.5rem;
 	}
 	.carasal{
 		width: 45%;
-		margin-left: 6rem;
+		margin-left: 8rem;
 		flex-grow: 1;
 	}
 	.slideshow-container {
@@ -941,7 +944,7 @@ form .form-btn{
 	.content .imgBox{
 		width: 400px;
 		display: flex;
-		padding-right: 8rem;
+		padding-right: 7.5rem;
 		justify-content: flex-end;
 	}
 	.content .imgBox img{
@@ -1022,7 +1025,7 @@ form .form-btn{
 		color: black;
 		font-size: 13px;
 		letter-spacing: 1px;
-		line-height: 23px;
+		line-height: 26px;
 		margin-bottom: 1.5rem;
 	}
 	.banner-img{
@@ -1033,6 +1036,36 @@ form .form-btn{
 		height: 320px;
 		width: 120%;
 	}
+	#about-us h1{
+		text-align: center;
+		color: black;
+		padding-top: 5px;
+		font-size: 35px;
+		font-family: 'Lilita One', cursive;
+		font-weight: 300;
+		margin-bottom: 2.5rem;
+		letter-spacing: 2px;
+	}
+	.about-box{
+		width: 85%;
+		flex-grow: 1;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.about-text{
+		width: 	47%;
+		max-width: 600;
+	}
+	.about-text p{
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: black;
+		font-weight: 450;
+		line-height: 28px;
+		margin-bottom: 1.5rem;
+	}
 	#menu h4{
 		text-align: center;
 		font-size: 30px;
@@ -1108,11 +1141,21 @@ form .form-btn{
 	.content .imgBox{
 		width: 400px;
 		display: flex;
-		padding-right: 8.5rem;
+		padding-right: 7.5rem;
 		justify-content: flex-end;
 	}	
 }
 @media(max-width:1136px){
+	.text-box p{
+		width: 80%;
+		max-width: 600;
+		text-align: left;
+		color: black;
+		font-size: 13px;
+		letter-spacing: 1px;
+		line-height: 26px;
+		margin-bottom: 1.5rem;
+	}
 	#menu h4{
 		text-align: center;
 		font-size: 30px;
@@ -1188,7 +1231,7 @@ form .form-btn{
 	.content .imgBox{
 		width: 400px;
 		display: flex;
-		padding-right: 8.5rem;
+		padding-right: 7.5rem;
 		justify-content: flex-end;
 	}	
 }
@@ -1200,6 +1243,26 @@ form .form-btn{
 	.banner-img img{
 		height: 350px;
 		width: 120%;
+	}
+	.about-box{
+		width: 85%;
+		flex-grow: 1;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.about-text{
+		width: 50%;
+		max-width: 600;
+	}
+	.about-text p{
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: black;
+		font-weight: 450;
+		line-height: 28px;
+		margin-bottom: 1.5rem;
 	}
 	.menu-list{
 		max-width: 95%;
@@ -1289,7 +1352,7 @@ form .form-btn{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 80%;
+		width: 83%;
 		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -1320,13 +1383,14 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 75%;
+		width: 80%;
 		max-width: 600;
 		text-align: left;
 		color: black;
-		font-size: 13px;
+		font-size: 12px;
+		font-weight: 450;
 		letter-spacing: 1px;
-		line-height: 23px;
+		line-height: 26px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
@@ -1334,7 +1398,7 @@ form .form-btn{
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 13px;
+		padding: 8px 13px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
@@ -1352,13 +1416,13 @@ form .form-btn{
 	}
 	.banner-img img{
 		height: 350px;
-		width: 120%;
+		width: 118%;
 	}
 
 	#about-us h1{
 		text-align: center;
 		color: black;
-		padding-top: 20px;
+		padding-top: 10px;
 		font-size: 33px;
 		font-family: 'Lilita One', cursive;
 		font-weight: 300;
@@ -1366,23 +1430,23 @@ form .form-btn{
 		letter-spacing: 2px;
 	}
 	.about-text{
-		width: 	47%;
+		width: 50%;
 		max-width: 600;
 	}
 	.about-text p{
-		font-size: 13px;
+		font-size: 12px;
 		letter-spacing: 1px;
 		color: black;
-		font-weight: 400;
-		line-height: 23px;
+		font-weight: 450;
+		line-height: 25px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 9px 11px;
+		padding: 9px 13px;
 		border-radius: 20px;
 	}
 	.about-btn a{
@@ -1573,7 +1637,8 @@ form .form-btn{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 80%;
+		width: 83%;
+		flex-grow: 1;
 		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -1604,21 +1669,22 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 75%;
+		width: 80%;
 		max-width: 600;
 		text-align: left;
 		color: black;
-		font-size: 13px;
+		font-size: 12px;
+		font-weight: 450;
 		letter-spacing: 1px;
-		line-height: 23px;
+		line-height: 26px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 13px;
+		padding: 9px 13px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
@@ -1650,23 +1716,23 @@ form .form-btn{
 		letter-spacing: 2px;
 	}
 	.about-text{
-		width: 	47%;
+		width: 50%;
 		max-width: 600;
 	}
 	.about-text p{
-		font-size: 13px;
+		font-size: 12px;
 		letter-spacing: 1px;
 		color: black;
-		font-weight: 400;
-		line-height: 23px;
+		font-weight: 450;
+		line-height: 27px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 9px 11px;
+		padding: 9px 13px;
 		border-radius: 20px;
 	}
 	.about-btn a{
@@ -1857,7 +1923,8 @@ form .form-btn{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 80%;
+		width: 84%;
+		flex-grow: 1;
 		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -1870,12 +1937,12 @@ form .form-btn{
 		margin-bottom: 10px;
 	}
 	.text-box h2{
-		font-size: 50px;
+		font-size: 53px;
 		color: black;
-		letter-spacing: 5px;
+		letter-spacing: 6px;
 		text-transform: uppercase;
 		font-weight: 500;
-		padding-top: 13px;
+		padding-top: 10px;
 		padding-bottom: 13px;
 		font-family: 'Lilita One', cursive;
 	}
@@ -1888,21 +1955,22 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 75%;
+		width: 79%;
 		max-width: 600;
 		text-align: left;
 		color: black;
-		font-size: 13px;
+		font-size: 12px;
 		letter-spacing: 1px;
-		line-height: 23px;
+		line-height: 27px;
+		font-weight: 450;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 13px;
+		padding: 8px 13px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
@@ -1920,13 +1988,13 @@ form .form-btn{
 	}
 	.banner-img img{
 		height: 350px;
-		width: 120%;
+		width: 118%;
 	}
 
 	#about-us h1{
 		text-align: center;
 		color: black;
-		padding-top: 20px;
+		padding-top: 5px;
 		font-size: 33px;
 		font-family: 'Lilita One', cursive;
 		font-weight: 300;
@@ -1934,23 +2002,23 @@ form .form-btn{
 		letter-spacing: 2px;
 	}
 	.about-text{
-		width: 	47%;
+		width: 50%;
 		max-width: 600;
 	}
 	.about-text p{
-		font-size: 13px;
+		font-size: 12px;
 		letter-spacing: 1px;
 		color: black;
-		font-weight: 400;
-		line-height: 23px;
+		font-weight: 450;
+		line-height: 26px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 9px 11px;
+		padding: 9px 13px;
 		border-radius: 20px;
 	}
 	.about-btn a{
@@ -2181,6 +2249,7 @@ form .form-btn{
 		justify-content: space-between;
 		align-items: center;
 		width: 85%;
+		flex-grow: 1;
 		padding-top: 3rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -2193,7 +2262,7 @@ form .form-btn{
 		margin-bottom: 10px;
 	}
 	.text-box h2{
-		font-size: 50px;
+		font-size: 53px;
 		color: black;
 		letter-spacing: 7px;
 		text-transform: uppercase;
@@ -2211,26 +2280,27 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 80%;
+		width: 81%;
 		max-width: 600;
 		text-align: left;
 		color: black;
+		font-weight: 450;
 		font-size: 12px;
 		letter-spacing: 1px;
-		line-height: 23px;
+		line-height: 26px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 13px;
+		padding: 8px 15px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
 	.textbox-btn a{
-		font-size: 13px;
+		font-size: 12px;
 		cursor: pointer;
 		letter-spacing: 1px;
 		font-weight: 300;
@@ -2244,11 +2314,12 @@ form .form-btn{
 	}
 	.banner-img img{
 		height: 350px;
-		width: 127%;
+		width: 125%;
 	}
 	#main{
 		width: 100%;
-		height: 45vh;
+		padding: 10px 0;
+		flex-grow: 1;
 	}
 	.about-box{
 		width: 84%;
@@ -2259,7 +2330,7 @@ form .form-btn{
 		align-items: center;
 	}
 	.about-text{
-		width: 	50%;
+		width: 53%;
 		max-width: 600;
 	}
 	#about-us h1{
@@ -2276,12 +2347,12 @@ form .form-btn{
 		font-size: 12px;
 		letter-spacing: 1px;
 		color: black;
-		font-weight: 400;
-		line-height: 23px;
+		font-weight: 450;
+		line-height: 26px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
@@ -2296,13 +2367,14 @@ form .form-btn{
 		text-decoration: none;
 	}
 	.carasal{
-		width: 48%;
-		margin-left: 8rem;
+		width: 50%;
+		margin-left: 7rem;
 		flex-grow: 1;
 	}
 	.slideshow-container {
-	  max-width: 800px;
-	  max-height: 900px;
+	  max-width: 750px;
+	  max-height: 800px;
+	  padding-left: 20px;
 	  position: relative;
 	  margin: auto;
 	}
@@ -2310,9 +2382,29 @@ form .form-btn{
 		font-size: 15px;
 	}
 	.mySlides img{
-		max-width: 95%;
+		max-width: 90%;
 		max-height: 70%;
 	}
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: -100%;
+	  padding: 17px;
+	  margin-top: -22px;
+	  color: black;
+	  font-weight: bold;
+	  font-size: 16px;
+	  transition: 0.6s ease;
+	  border-radius: 0 2px 2px 0;
+	  user-select: none;
+	}
+	.next {
+	  right: -20px;
+	  border-radius: 3px 0 0 3px;
+	}
+
 	#menu h4{
 		text-align: center;
 		font-size: 30px;
@@ -2350,6 +2442,32 @@ form .form-btn{
 		justify-content: center;
 		align-items: center;
 		max-height: 100%;
+	}
+	.content .imgBox{
+		width: 400px;
+		display: flex;
+		justify-content: center;
+	}
+	.content .imgBox img{
+		max-width: 220px;
+		padding-top: 10px;
+		max-height: 400px;
+		margin-bottom: 7rem;
+	}
+	.thumb{
+		position: absolute;
+		left: 40%;
+		bottom: 20px;
+		padding-top: 5rem;
+		transform: translateX(-40%);
+		display: flex;
+	}
+	.thumb li{
+		list-style: none;
+		display: inline-block;
+		margin:  0 15px;
+		cursor: pointer;
+		transition: 0.5s;
 	}
 	.card-text h1{
 		font-size: 12px;
@@ -2888,6 +3006,7 @@ form .form-btn{
 		justify-content: space-between;
 		align-items: center;
 		width: 86%;
+		flex-grow: 1;
 		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -2915,16 +3034,17 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 84%;
+		width: 85%;
 		max-width: 600;
 		text-align: left;
 		color: black;
+		font-weight: 450;
 		font-size: 11px;
-		line-height: 20px;
+		line-height: 24px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
@@ -2961,14 +3081,14 @@ form .form-btn{
 		letter-spacing: 2px;
 	}
 	.about-text{
-		width: 	53%;
+		width: 54%;
 		max-width: 600;
 	}
 	.about-text p{
 		font-size: 12px;
 		color: black;
-		font-weight: 400;
-		line-height: 21px;
+		font-weight: 450;
+		line-height: 25px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
@@ -3250,7 +3370,8 @@ form .form-btn{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 86%;
+		width: 87%;
+		flex-grow: 1;
 		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -3283,11 +3404,11 @@ form .form-btn{
 		text-align: left;
 		color: black;
 		font-size: 11px;
-		line-height: 20px;
+		line-height: 22px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
@@ -3324,14 +3445,14 @@ form .form-btn{
 		letter-spacing: 2px;
 	}
 	.about-text{
-		width: 	50%;
+		width: 	55%;
 		max-width: 600;
 	}
 	.about-text p{
-		font-size: 12px;
+		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 20px;
+		font-weight: 450;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
@@ -3613,7 +3734,8 @@ form .form-btn{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 86%;
+		width: 87%;
+		flex-grow: 1;
 		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -3646,15 +3768,16 @@ form .form-btn{
 		text-align: left;
 		color: black;
 		font-size: 11px;
-		line-height: 19px;
+		font-weight: 420;
+		line-height: 22px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 12px;
+		padding: 8px 13px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
@@ -3674,9 +3797,6 @@ form .form-btn{
 		height: 310px;
 		width: 173%;
 	}
-	#about-us{
-		margin-top: 13rem;
-	}
 	#about-us h1{
 		text-align: center;
 		color: black;
@@ -3688,22 +3808,22 @@ form .form-btn{
 		letter-spacing: 1px;
 	}
 	.about-text{
-		width: 	53%;
+		width: 55%;
 		max-width: 600;
 	}
 	.about-text p{
 		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 20px;
+		font-weight: 450;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 11px;
+		padding: 8px 13px;
 		border-radius: 20px;
 	}
 	.about-btn a{
@@ -3995,6 +4115,7 @@ form .form-btn{
 		justify-content: space-between;
 		align-items: center;
 		width: 86%;
+		flex-grow: 1;
 		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -4027,15 +4148,16 @@ form .form-btn{
 		text-align: left;
 		color: black;
 		font-size: 11px;
-		line-height: 19px;
+		font-weight: 420;
+		line-height: 22px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 12px;
+		padding: 8px 13px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
@@ -4055,9 +4177,6 @@ form .form-btn{
 		height: 310px;
 		width: 173%;
 	}
-	#about-us{
-		margin-top: 13rem;
-	}
 	#about-us h1{
 		text-align: center;
 		color: black;
@@ -4069,22 +4188,22 @@ form .form-btn{
 		letter-spacing: 1px;
 	}
 	.about-text{
-		width: 	53%;
+		width: 57%;
 		max-width: 600;
 	}
 	.about-text p{
 		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 20px;
+		font-weight: 450;
+		line-height: 22px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 11px;
+		padding: 8px 13px;
 		border-radius: 20px;
 	}
 	.about-btn a{
@@ -4327,6 +4446,168 @@ form .form-btn{
 	}
 }
 @media(max-width:824px){
+	.header{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 2.3rem;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		flex-grow: 1;
+		padding-right: 2.3rem;
+		background: darkred;
+	}
+	.logo{
+		max-width: 50px;
+		max-height: 45px;
+		border-radius: 50%;
+		border: .1px solid white;
+	}
+	.header ul{
+		float: right;
+		margin-right: 20px;
+	}
+	.header ul li{
+		display: inline-block;
+		list-style: none;
+		margin: 0 5px;
+		line-height:70px;
+	}
+	.header ul li a{
+		padding: 5px 17px;
+		color: white;
+		font-weight: 500;
+		font-size: 13px;
+		text-decoration: none;
+	}
+	.header-icon ion-icon{
+		color: white;
+		height: 30px;
+		width: 30px;
+		font-size: 45px;
+		cursor: pointer;
+		border-radius: 20px;
+		padding: 5px 5px;
+	}
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 86%;
+		flex-grow: 1;
+		padding-top: 5rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-box h1{
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		color: black;
+		margin-bottom: 5px;
+	}
+	.text-box h2{
+		font-size: 40px;
+		color: black;
+		letter-spacing: 5px;
+		font-weight: 500;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.text-box h3{
+		font-size: 28px;
+		color: black;
+		letter-spacing: 5px;
+		font-weight: 400;
+		margin-bottom: 1.5rem;
+	}
+	.text-box p{
+		width: 85%;
+		max-width: 600;
+		text-align: left;
+		color: black;
+		font-size: 11px;
+		font-weight: 420;
+		line-height: 22px;
+		margin-bottom: 1.5rem;
+	}
+	.textbox-btn{
+		width: 9rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 8px 13px;
+		border-radius: 20px;
+		cursor: pointer;
+	}
+	.textbox-btn a{
+		font-size: 13px;
+		cursor: pointer;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.banner-img{
+		width: 145%;
+		height: 45%;
+		padding-right: 5rem;
+	}
+	.banner-img img{
+		height: 310px;
+		width: 170%;
+	}
+	#about-us h1{
+		text-align: center;
+		color: black;
+		padding-top: 10px;
+		font-size: 28px;
+		font-family: 'Lilita One', cursive;
+		font-weight: 300;
+		margin-bottom: 2.5rem;
+		letter-spacing: 1px;
+	}
+	.about-text{
+		width: 60%;
+		max-width: 600;
+	}
+	.about-text p{
+		font-size: 11px;
+		color: black;
+		font-weight: 450;
+		line-height: 22px;
+		margin-bottom: 1.5rem;
+	}
+	.about-btn{
+		width: 9rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 8px 13px;
+		border-radius: 20px;
+	}
+	.about-btn a{
+		font-size: 12px;
+		letter-spacing: 1px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.carasal{
+		width: 47%;
+		margin-left: 5rem;
+		flex-grow: 1;
+	}
+	.slideshow-container {
+	  max-width: 750px;
+	  max-height: 850px;
+	  position: relative;
+	  margin: auto;
+	}
+	.mySlides .text{
+		font-size: 15px;
+		padding-top: 10px;
+	}
 	.menu-list{
 		max-width: 100%;
 		flex-grow: 1;
@@ -4477,11 +4758,11 @@ form .form-btn{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding-left: 2.5rem;
+		padding-left: 2.3rem;
 		padding-top: 13px;
 		padding-bottom: 13px;
 		flex-grow: 1;
-		padding-right: 2.5rem;
+		padding-right: 2.3rem;
 		background: darkred;
 	}
 	.logo{
@@ -4501,7 +4782,7 @@ form .form-btn{
 		line-height:70px;
 	}
 	.header ul li a{
-		padding: 5px 15px;
+		padding: 5px 17px;
 		color: white;
 		font-weight: 500;
 		font-size: 13px;
@@ -4521,17 +4802,18 @@ form .form-btn{
 		justify-content: space-between;
 		align-items: center;
 		width: 86%;
-		padding-top: 3rem;
+		flex-grow: 1;
+		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.text-box h1{
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 400;
 		letter-spacing: 1px;
 		color: black;
 		margin-bottom: 5px;
-	} 
+	}
 	.text-box h2{
 		font-size: 40px;
 		color: black;
@@ -4541,32 +4823,33 @@ form .form-btn{
 		padding-bottom: 10px;
 	}
 	.text-box h3{
-		font-size: 30px;
+		font-size: 28px;
 		color: black;
 		letter-spacing: 5px;
 		font-weight: 400;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
 	.text-box p{
-		width: 81%;
+		width: 85%;
 		max-width: 600;
 		text-align: left;
 		color: black;
 		font-size: 11px;
-		line-height: 20px;
+		font-weight: 420;
+		line-height: 22px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 7rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 12px;
+		padding: 8px 13px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
 	.textbox-btn a{
-		font-size: 12px;
+		font-size: 13px;
 		cursor: pointer;
 		font-weight: 300;
 		color: white;
@@ -4575,44 +4858,39 @@ form .form-btn{
 	.banner-img{
 		width: 145%;
 		height: 45%;
-		padding-right: 7rem;
+		padding-right: 5rem;
 	}
 	.banner-img img{
-		height: 320px;
-		width: 183%;
-	}
-	#main{
-		width: 100%;
-		height: 40vh;
+		height: 310px;
+		width: 170%;
 	}
 	#about-us h1{
 		text-align: center;
 		color: black;
-		padding-top: 20px;
-		margin-top: 1rem;
-		font-size: 30px;
+		padding-top: 5px;
+		font-size: 28px;
 		font-family: 'Lilita One', cursive;
 		font-weight: 300;
 		margin-bottom: 2.5rem;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 	}
 	.about-text{
-		width: 	55%;
+		width: 60%;
 		max-width: 600;
 	}
 	.about-text p{
 		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 18px;
+		font-weight: 450;
+		line-height: 22px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
-		width: 7rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 10px;
+		padding: 8px 13px;
 		border-radius: 20px;
 	}
 	.about-btn a{
@@ -4624,12 +4902,13 @@ form .form-btn{
 	}
 	.carasal{
 		width: 45%;
-		margin-left: 5rem;
+		margin-left: 3rem;
 		flex-grow: 1;
 	}
 	.slideshow-container {
 	  max-width: 700px;
 	  max-height: 800px;
+	  padding-left: 10px;
 	  position: relative;
 	  margin: auto;
 	}
@@ -4638,17 +4917,17 @@ form .form-btn{
 	  position: absolute;
 	  top: 50%;
 	  width: -100%;
-	  padding: 15px;
+	  padding: 16px;
 	  margin-top: -22px;
 	  color: black;
 	  font-weight: bold;
-	  font-size: 18px;
+	  font-size: 15px;
 	  transition: 0.6s ease;
-	  border-radius: 0 3px 3px 0;
+	  border-radius: 0 2px 2px 0;
 	  user-select: none;
 	}
 	.next{
-		right: 1rem;
+		right: -10px;
 	}
 	.mySlides .text{
 		font-size: 15px;
@@ -4731,12 +5010,32 @@ form .form-btn{
 		margin-right: 0;
 	}
 	.content .imgBox{
-		width: 350px;
+		width: 340px;
 		display: flex;
 		padding-right: 5.5rem;
 		justify-content: flex-end;
 	}	
-
+	.content .imgBox img{
+		max-width: 200px;
+		padding-top: 10px;
+		max-height: 350px;
+		margin-bottom: 7rem;
+	}
+	.thumb{
+		position: absolute;
+		left: 40%;
+		bottom: 20px;
+		padding-top: 5rem;
+		transform: translateX(-40%);
+		display: flex;
+	}
+	.thumb li{
+		list-style: none;
+		display: inline-block;
+		margin:  0 15px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
 	#contact h1{
 		text-align: center;
 		font-size: 28px;
@@ -5737,7 +6036,8 @@ form .form-btn{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 86%;
+		width: 87%;
+		flex-grow: 1;
 		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -5765,20 +6065,20 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 81%;
+		width: 83%;
 		max-width: 600;
 		text-align: left;
 		color: black;
 		font-size: 11px;
-		line-height: 18px;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 7rem;
+		width: 8rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 12px;
+		padding: 7px 13px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
@@ -5792,18 +6092,17 @@ form .form-btn{
 	.banner-img{
 		width: 145%;
 		height: 45%;
-		padding-right: 7rem;
+		padding-right: 5rem;
 	}
 	.banner-img img{
 		height: 320px;
-		width: 183%;
+		width: 180%;
 	}
 
 	#about-us h1{
 		text-align: center;
 		color: black;
-		padding-top: 20px;
-		margin-top: 1rem;
+		padding-top: 5px;
 		font-size: 30px;
 		font-family: 'Lilita One', cursive;
 		font-weight: 300;
@@ -5811,14 +6110,14 @@ form .form-btn{
 		letter-spacing: 2px;
 	}
 	.about-text{
-		width:63%;
-		max-width: 600;
+		width:68%;
+		max-width: 550;
 	}
 	.about-text p{
 		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 18px;
+		font-weight: 450;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
@@ -5837,13 +6136,13 @@ form .form-btn{
 		text-decoration: none;
 	}
 	.carasal{
-		width: 47%;
-		margin-left: 7rem;
+		width: 50%;
+		margin-left: 5rem;
 		flex-grow: 1;
 	}
 	.slideshow-container {
-	  max-width: 650px;
-	  max-height: 750px;
+	  max-width: 700px;
+	  max-height: 900px;
 	  position: relative;
 	  margin: auto;
 	}
@@ -5856,7 +6155,7 @@ form .form-btn{
 	  margin-top: -22px;
 	  color: black;
 	  font-weight: bold;
-	  font-size: 18px;
+	  font-size: 15px;
 	  transition: 0.6s ease;
 	  border-radius: 0 3px 3px 0;
 	  user-select: none;
@@ -5865,7 +6164,7 @@ form .form-btn{
 		left: 0;
 	}
 	.next {
-	  right: 1rem;
+	  right: -10px;
 	  border-radius: 3px 0 0 3px;
 	}
 	.mySlides .text{
@@ -6154,7 +6453,8 @@ form .form-btn{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 86%;
+		width: 87%;
+		flex-grow: 1;
 		padding-top: 5rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -6187,15 +6487,15 @@ form .form-btn{
 		text-align: left;
 		color: black;
 		font-size: 11px;
-		line-height: 18px;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 7rem;
+		width: 8rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 12px;
+		padding: 8px 13px;
 		border-radius: 20px;
 		cursor: pointer;
 	}
@@ -6209,18 +6509,16 @@ form .form-btn{
 	.banner-img{
 		width: 145%;
 		height: 45%;
-		padding-right: 7rem;
+		padding-right: 5rem;
 	}
 	.banner-img img{
 		height: 320px;
-		width: 183%;
+		width: 180%;
 	}
-
 	#about-us h1{
 		text-align: center;
 		color: black;
-		padding-top: 20px;
-		margin-top: 1rem;
+		padding-top: 5px;
 		font-size: 30px;
 		font-family: 'Lilita One', cursive;
 		font-weight: 300;
@@ -6228,14 +6526,14 @@ form .form-btn{
 		letter-spacing: 2px;
 	}
 	.about-text{
-		width:63%;
-		max-width: 600;
+		width:68%;
+		max-width: 550;
 	}
 	.about-text p{
 		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 18px;
+		font-weight: 450;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
@@ -6254,13 +6552,13 @@ form .form-btn{
 		text-decoration: none;
 	}
 	.carasal{
-		width: 47%;
-		margin-left: 7rem;
+		width: 50%;
+		margin-left: 5rem;
 		flex-grow: 1;
 	}
 	.slideshow-container {
-	  max-width: 650px;
-	  max-height: 750px;
+	  max-width: 700px;
+	  max-height: 900px;
 	  position: relative;
 	  margin: auto;
 	}
@@ -6273,7 +6571,7 @@ form .form-btn{
 	  margin-top: -22px;
 	  color: black;
 	  font-weight: bold;
-	  font-size: 18px;
+	  font-size: 15px;
 	  transition: 0.6s ease;
 	  border-radius: 0 3px 3px 0;
 	  user-select: none;
@@ -6282,7 +6580,7 @@ form .form-btn{
 		left: 0;
 	}
 	.next {
-	  right: 1rem;
+	  right: -10px;
 	  border-radius: 3px 0 0 3px;
 	}
 	.mySlides .text{
@@ -6530,7 +6828,7 @@ form .form-btn{
 	.header ul{
 		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 95vh;
 		background: #000;
 		top: 84px;
 		left: -100%;
@@ -6540,12 +6838,13 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
+		padding-top: 20px;
 		margin: 45px 0;
 		line-height: 20px;
 	}
 	.header ul li a{
-		font-size: 20px;
+		font-size: 18px;
+		letter-spacing: 5px;
 		letter-spacing: 4px;
 		font-weight: 400;
 	}
@@ -6560,11 +6859,7 @@ form .form-btn{
 	}
 	#main{
 		width: 100%;
-		height: 50vh;
-	}
-	#main .container{
 		padding: 10px 0;
-		margin-top: 2rem;
 	}
 	.container{
 		display: block;
@@ -6573,13 +6868,14 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 95%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.text-box h1{
 		font-size: 15px;
-		letter-spacing: 1px;
-		font-weight: 400;
+		letter-spacing: 2px;
+		font-weight: 450;
 		color: black;
 		margin-bottom: 5px;
 	}
@@ -6588,7 +6884,7 @@ form .form-btn{
 		color: black;
 		letter-spacing: 10px;
 		font-weight: 500;
-		padding-top: 13px;
+		padding-top: 14px;
 		padding-bottom: 13px;
 	}
 	.text-box h3{
@@ -6599,13 +6895,13 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 63%;
-		max-width: 600;
+		width: 65%;
+		max-width: 550;
 		margin: auto;
 		text-align: left;
 		color: black;
 		font-size: 12px;
-		line-height: 20px;
+		line-height: 26px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
@@ -6613,13 +6909,13 @@ form .form-btn{
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 8px 15px;
+		padding: 10px 15px;
 		border-radius: 20px;
 		cursor: pointer;
-		margin-bottom: 4.5rem;
+		margin-bottom: 5rem;
 	}
 	.textbox-btn a{
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: 300;
 		color: white;
 		text-decoration: none;
@@ -6630,15 +6926,16 @@ form .form-btn{
 		padding-right: 0;
 		margin-right: 0;
 		margin: auto;
-		margin-bottom: 3.5rem;
+		margin-bottom: 5px;
 	}
 	.banner-img img{
 		height: 300px;
-		width: 85%;
-
+		width: 90%;
 	}
 	#about-us{
-		margin-top: 28rem;
+		width: 100%;
+		padding: 10px 0;
+		scroll-behavior: smooth;
 	}
 	#about-us h1{
 		text-align: center;
@@ -6646,7 +6943,7 @@ form .form-btn{
 		font-size: 27px;
 		font-weight: 300;
 		margin-bottom: 1.5rem;
-		letter-spacing: 5px;
+		letter-spacing: 3px;
 	}
 	.about-box{
 		width: 90%;
@@ -6666,8 +6963,8 @@ form .form-btn{
 	.about-text p{
 		font-size: 12px;
 		color: black;
-		font-weight: 400;
-		line-height: 20px;
+		font-weight: 420;
+		line-height: 25px;
 		margin-bottom: 1.7rem;
 	}
 	.about-btn{
@@ -6675,7 +6972,7 @@ form .form-btn{
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 20px;
+		padding: 8px 25px;
 		margin-bottom: 3.5rem;
 		border-radius: 20px;
 	}
@@ -6782,7 +7079,7 @@ form .form-btn{
 		max-height: 30%;
 	}
 	.card-text h1{
-		font-size: 17px;
+		font-size: 18px;
 		color: white;
 		font-weight: 500;
 		margin-top: 20px;
@@ -7001,7 +7298,7 @@ form .form-btn{
 	.header ul{
 		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 90vh;
 		background: #000;
 		top: 84px;
 		left: -100%;
@@ -7011,12 +7308,12 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
+		padding-top: 15px;
 		margin: 45px 0;
 		line-height: 20px;
 	}
 	.header ul li a{
-		font-size: 20px;
+		font-size: 18px;
 		letter-spacing: 4px;
 		font-weight: 400;
 	}
@@ -7031,10 +7328,9 @@ form .form-btn{
 	}
 	#main{
 		width: 100%;
-		height: 50vh;
+		padding: 10px 0;
 	}
 	#main .container{
-		padding: 10px 0;
 		margin-top: 2rem;
 	}
 	.container{
@@ -7044,6 +7340,7 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 95%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -7070,12 +7367,12 @@ form .form-btn{
 	}
 	.text-box p{
 		width: 63%;
-		max-width: 600;
+		max-width: 550;
 		margin: auto;
 		text-align: left;
 		color: black;
 		font-size: 11px;
-		line-height: 19px;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
@@ -7083,13 +7380,13 @@ form .form-btn{
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 8px 15px;
+		padding: 10px 15px;
 		border-radius: 20px;
 		cursor: pointer;
-		margin-bottom: 4rem;
+		margin-bottom: 4.5rem;
 	}
 	.textbox-btn a{
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: 300;
 		color: white;
 		text-decoration: none;
@@ -7100,23 +7397,22 @@ form .form-btn{
 		padding-right: 0;
 		margin-right: 0;
 		margin: auto;
-		margin-bottom: 3.5rem;
+		margin-bottom: 2rem;
 	}
 	.banner-img img{
 		height: 300px;
 		width: 83%;
-
 	}
 	#about-us{
-		margin-top: 28rem;
+		margin-top: 10px;
 	}
 	#about-us h1{
 		text-align: center;
 		color: black;
-		font-size: 27px;
+		font-size: 30px;
 		font-weight: 300;
 		margin-bottom: 1.5rem;
-		letter-spacing: 5px;
+		letter-spacing: 3px;
 	}
 	.about-box{
 		width: 90%;
@@ -7129,15 +7425,15 @@ form .form-btn{
 		align-items: center;
 	}
 	.about-text{
-		width: 65%;
+		width: 67%;
 		margin: auto;
 		max-width: 600;
 	}
 	.about-text p{
 		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 20px;
+		font-weight: 430;
+		line-height: 22px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
@@ -7188,7 +7484,7 @@ form .form-btn{
 		left: 1rem;
 	}
 	.next {
-	  right:0;
+	  right:-20px;
 	  border-radius: 3px 0 0 3px;
 	}
 	.dot {
@@ -7470,7 +7766,7 @@ form .form-btn{
 	.header ul{
 		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 90vh;
 		background: #000;
 		top: 84px;
 		left: -100%;
@@ -7480,12 +7776,12 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
+		padding-top: 15px;
 		margin: 45px 0;
 		line-height: 20px;
 	}
 	.header ul li a{
-		font-size: 20px;
+		font-size: 18px;
 		letter-spacing: 4px;
 		font-weight: 400;
 	}
@@ -7500,10 +7796,9 @@ form .form-btn{
 	}
 	#main{
 		width: 100%;
-		height: 50vh;
+		padding: 10px 0;
 	}
 	#main .container{
-		padding: 10px 0;
 		margin-top: 2rem;
 	}
 	.container{
@@ -7513,6 +7808,7 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 95%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -7520,6 +7816,7 @@ form .form-btn{
 		font-size: 15px;
 		font-weight: 400;
 		color: black;
+		letter-spacing: 2px;
 		margin-bottom: 5px;
 	}
 	.text-box h2{
@@ -7538,14 +7835,14 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 63%;
-		max-width: 600;
+		width: 65%;
+		max-width: 550;
 		margin: auto;
 		text-align: left;
 		color: black;
-		font-size: 11px;
-		line-height: 19px;
-		margin-bottom: 1.5rem;
+		font-size: 12px;
+		line-height: 23px;
+		margin-bottom: 2rem;
 	}
 	.textbox-btn{
 		width: 10rem;
@@ -7574,10 +7871,6 @@ form .form-btn{
 	.banner-img img{
 		height: 300px;
 		width: 83%;
-
-	}
-	#about-us{
-		margin-top: 28rem;
 	}
 	#about-us h1{
 		text-align: center;
@@ -7605,8 +7898,8 @@ form .form-btn{
 	.about-text p{
 		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 20px;
+		font-weight: 420;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
@@ -7686,7 +7979,7 @@ form .form-btn{
 		font-weight: 400;
 		color: black;
 		padding-top: 20px;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
 	}
 	.menu-list{
 		max-width: 100%;
@@ -7783,7 +8076,7 @@ form .form-btn{
 	.thumb li{
 		list-style: none;
 		display: inline-block;
-		margin:  0 15px;
+		margin:  0 17px;
 		cursor: pointer;
 		transition: 0.5s;
 	}
@@ -7939,7 +8232,7 @@ form .form-btn{
 	.header ul{
 		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 90vh;
 		background: #000;
 		top: 84px;
 		left: -100%;
@@ -7949,12 +8242,13 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
+		padding-top: 15px;
 		margin: 45px 0;
 		line-height: 20px;
 	}
 	.header ul li a{
-		font-size: 20px;
+		font-size: 18px;
+		letter-spacing: 2px;
 		letter-spacing: 4px;
 		font-weight: 400;
 	}
@@ -7969,7 +8263,7 @@ form .form-btn{
 	}
 	#main{
 		width: 100%;
-		height: 50vh;
+		padding: 10px 0;
 	}
 	#main .container{
 		padding: 10px 0;
@@ -8007,13 +8301,13 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 63%;
+		width: 65%;
 		max-width: 600;
 		margin: auto;
 		text-align: left;
 		color: black;
 		font-size: 11px;
-		line-height: 19px;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
@@ -8021,10 +8315,10 @@ form .form-btn{
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 8px 15px;
+		padding: 10px 15px;
 		border-radius: 20px;
 		cursor: pointer;
-		margin-bottom: 4rem;
+		margin-bottom: 4.5rem;
 	}
 	.textbox-btn a{
 		font-size: 12px;
@@ -8043,7 +8337,6 @@ form .form-btn{
 	.banner-img img{
 		height: 300px;
 		width: 83%;
-
 	}
 
 	#about-us h1{
@@ -8072,8 +8365,8 @@ form .form-btn{
 	.about-text p{
 		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 20px;
+		font-weight: 420;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
@@ -8250,7 +8543,476 @@ form .form-btn{
 	.thumb li{
 		list-style: none;
 		display: inline-block;
-		margin:  0 15px;
+		margin:  0 17px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+	.thumb li img{
+		max-width: 60px;
+		max-height: 45px;
+	}
+	#contact h1{
+		text-align: center;
+		font-size: 25px;
+		font-weight: 400;
+		letter-spacing: 4px;
+		font-family: 'Lilita One', cursive;
+		margin-bottom: 1.5rem;
+	}
+	.contact-box p{
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 12px;
+		max-width: 500;
+		margin-bottom: 2.5rem;
+	}
+	.container-box{
+		flex-grow: 1;
+		display: block;
+		width: 85%;
+		margin: auto;
+	}
+	.box-1,.box-2{
+		display: flex;
+		margin-left: 8.5rem;
+	}
+	.box-1 h2, .box-2 h2{
+		font-size: 16px;
+		font-weight: 400;
+		color: black;
+	}
+	.box-1 ul li{
+		padding-left: 1.5rem;
+		list-style: none;
+		color: black;
+		font-size: 13px;
+		font-weight: 420;
+		padding-bottom: 7px;
+	}
+	.box-2 ol li{
+		padding-left: 3.1rem;
+		list-style: none;
+		letter-spacing: 1px;
+		color: black;
+		font-size: 14px;
+		font-weight: 400;
+		padding-top: 10px;
+		margin-bottom: 1.5rem;
+	}
+	form{
+		margin-top: 3.5rem;
+		width: 75%;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		align-content: center;
+		border: 1px solid grey;
+		flex-grow: 1;
+		padding: 10px 0;
+		margin-bottom: 3rem;
+	}
+	form h3{
+		font-size: 23px;
+		letter-spacing: 2px;
+		font-weight: 450;
+		font-family: 'Lilita One', cursive;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	form input{
+		justify-content: center;
+		align-items: center;
+		width: 17rem;
+		margin: auto;
+		align-items: center;
+		align-content: center;
+		margin-block: 1rem;
+		flex-grow: 1;
+		display: block;
+		outline: none;
+		color: black;
+		border: 1px solid grey;
+		border-bottom: 1px solid black;
+		border-radius: 3px;
+		padding: 10px 15px;
+	}
+	form .form-btn{
+		width: 70%;
+		font-size: 15px;
+		outline: none;
+		border: none;
+		border-radius: 8px;
+		letter-spacing: 2px;
+		font-weight: 500;
+		background: darkred;
+		color: white;
+	}
+	#footer{
+		width: 100%;
+		padding: 20px 0;
+		flex-grow: 1;
+		scroll-behavior: smooth;
+		background: darkred;
+		display: block;
+		text-align: center;
+		justify-content: space-around;
+		align-items: center;
+		background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.85),
+		rgb(0, 0, 0, 0.86)), url(./images/img9.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.footer-links h1{
+		font-size: 23px;
+		letter-spacing: 5px;
+		color: white;
+		padding-top: 10px;
+		margin-bottom: 1.7rem;
+		font-weight: 200;
+	}
+	.footer-links ul li{
+		margin-bottom: 5px;
+	}
+	.footer-links ul li a{
+		font-size: 13px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		text-decoration: none;
+		color: white;
+	}
+	.footer-links ion-icon{
+		font-size: 20px;
+		height: 15px;
+		width: 15px;
+		padding-right: 8px;
+		color: white;
+	}
+}
+@media(max-width:712px){
+	.checkbtn{
+		display: block;
+		color: white;
+	}
+	.header ul{
+		position: absolute;
+		width: 100%;
+		height: 50vh;
+		background: #000;
+		top: 84px;
+		left: -100%;
+		z-index: 100;
+		text-align: center;
+		transition: all .5s;
+	}
+	.header ul li{
+		display: block;
+		padding-top: 35px;
+		margin: 45px 0;
+		line-height: 13px;
+	}
+	.header ul li a{
+		font-size: 18px;
+		letter-spacing: 2px;
+		letter-spacing: 4px;
+		font-weight: 400;
+	}
+	.header .activer{
+		border: none;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	.header-icon{
+		display: none;
+	}
+	#main{
+		width: 100%;
+		padding: 10px 0;
+	}
+	#main .container{
+		margin-top: 2rem;
+	}
+	.container{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+		width: 95%;
+		flex-grow: 1;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-box h1{
+		font-size: 15px;
+		font-weight: 400;
+		color: black;
+		margin-bottom: 5px;
+	}
+	.text-box h2{
+		font-size: 45px;
+		color: black;
+		letter-spacing: 10px;
+		font-weight: 500;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.text-box h3{
+		font-size: 33px;
+		color: black;
+		letter-spacing: 7px;
+		font-weight: 400;
+		margin-bottom: 2rem;
+	}
+	.text-box p{
+		width: 65%;
+		max-width: 600;
+		margin: auto;
+		text-align: left;
+		color: black;
+		font-weight: 500px;
+		font-size: 11px;
+		line-height: 24px;
+		margin-bottom: 2rem;
+	}
+	.textbox-btn{
+		width: 10rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 11px 15px;
+		border-radius: 20px;
+		cursor: pointer;
+		margin-bottom: 5rem;
+	}
+	.textbox-btn a{
+		font-size: 13px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.banner-img{
+		width: 55%;
+		height: 70%;
+		padding-right: 0;
+		margin-right: 0;
+		margin: auto;
+		margin-bottom: 2.5rem;
+	}
+	.banner-img img{
+		height: 350px;
+		width: 90%;
+	}
+	#about-us{
+		margin-top: 1rem;
+	}
+	#about-us h1{
+		text-align: center;
+		color: black;
+		font-size: 27px;
+		font-weight: 300;
+		margin-bottom: 1.5rem;
+		letter-spacing: 5px;
+	}
+	.about-box{
+		width: 90%;
+		flex-grow: 1;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.about-text{
+		width: 67%;
+		margin: auto;
+		max-width: 600;
+	}
+	.about-text p{
+		font-size: 11px;
+		color: black;
+		font-weight: 450;
+		line-height: 23px;
+		margin-bottom: 1.5rem;
+	}
+	.about-btn{
+		width: 8rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 8px 17px;
+		margin-bottom: 3.5rem;
+		border-radius: 20px;
+	}
+	.about-btn a{
+		font-size: 12px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.carasal{
+		width: 55%;
+		margin:auto;
+		flex-grow: 1;
+	}
+	.slideshow-container {
+	  max-width: 650px;
+	  max-height: 750px;
+	  position: relative;
+	  margin: auto;
+	}
+	.mySlides img{
+		max-width: 70%;
+		max-height: 90%;
+	}
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: -100%;
+	  padding: 15px;
+	  margin-top: -22px;
+	  color: black;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+	.prev{
+		left: 1rem;
+	}
+	.next {
+	  right:0;
+	  border-radius: 3px 0 0 3px;
+	}
+	.dot {
+	  cursor: pointer;
+	  height: 13px;
+	  width: 13px;
+	  margin: 0 3px;
+	  background-color: darkred;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	.mySlides .text{
+		font-size: 15px;
+		padding-top: 10px;
+	}
+	#menu{
+	 	width: 100%;
+	 	padding-top: 1.5rem;
+	 	scroll-behavior: smooth;
+	}
+	#menu h4{
+		text-align: center;
+		font-size: 25px;
+		letter-spacing: 5px;
+		font-weight: 400;
+		color: black;
+		padding-top: 20px;
+		margin-bottom: 1.5rem;
+	}
+	.menu-list{
+		max-width: 100%;
+		flex-grow: 1;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		display: block;
+		justify-content: center;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.menu-images{
+		display: block;
+		justify-content: center;
+		grid-template-columns: 20% 20% 20% ;
+	}
+	.menu-images .card{
+		max-width: 45%;
+		margin:auto;
+		max-height: 40%;
+		border: 1px solid grey;
+		border-radius: 10px;
+		margin-block: 2rem;
+	}
+	.menu-images .card img{
+		max-width: 100%;
+		justify-content: center;
+		align-items: center;
+		max-height: 30%;
+	}
+	.card-text h1{
+		font-size: 17px;
+		color: white;
+		font-weight: 500;
+		margin-top: 20px;
+		border-top: 1px solid grey;
+		padding-top: 10px;
+		background-color: darkred;
+		padding-bottom: 10px;
+		letter-spacing: 1px;
+		border-bottom: 1px solid grey;
+		margin-bottom: 1rem;
+	}
+	.card-text h2{
+		font-size: 25px;
+		font-weight: 550;
+		color: black;
+		letter-spacing: 3px;
+		padding-bottom: 10px;
+	}
+	.book h1{
+		text-align: center;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 2px;
+		padding-right: 12rem;
+		margin-bottom: 2.5rem;
+		color: black;
+		margin-top: 2.5rem;
+	}
+	.book-tab{
+		width: 73%;
+		margin: auto;
+		flex-grow: 1;
+		padding: 10px 0;
+	}
+	main{
+		margin-right: 3rem;
+	}
+	.content .imgBox{
+		width: 320px;
+		display: flex;
+		padding-left: 4.5rem;
+		padding-right: 1rem;
+		justify-content: center;
+	}	
+	.content .imgBox img{
+		max-width: 220px;
+		padding-top: 15px;
+		max-height: 350px;
+		margin-bottom: 7rem;
+	}
+	.thumb{
+		position: absolute;
+		left: 43%;
+		bottom: 20px;
+		padding-top: 5rem;
+		transform: translateX(-40%);
+		display: flex;
+	}
+	.thumb li{
+		list-style: none;
+		display: inline-block;
+		margin:  0 17px;
 		cursor: pointer;
 		transition: 0.5s;
 	}
@@ -8411,7 +9173,7 @@ form .form-btn{
 	.header ul{
 		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 90vh;
 		background: #000;
 		top: 85px;
 		left: -100%;
@@ -8421,9 +9183,9 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
+		padding-top: 15px;
 		margin: 48px 0;
-		line-height: 25px;
+		line-height: 23px;
 	}
 	.header ul li a{
 		font-size: 16px;
@@ -8475,13 +9237,13 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 63%;
+		width: 65%;
 		max-width: 600;
 		margin: auto;
 		text-align: left;
 		color: black;
 		font-size: 11px;
-		line-height: 19px;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
@@ -8489,10 +9251,10 @@ form .form-btn{
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 15px;
+		padding: 9px 15px;
 		border-radius: 20px;
 		cursor: pointer;
-		margin-bottom: 4.5rem;
+		margin-bottom: 5rem;
 	}
 	.textbox-btn a{
 		font-size: 12px;
@@ -8511,12 +9273,11 @@ form .form-btn{
 		height: 270px;
 		width: 85%;
 	}
-	#about-us{
-		margin-top: 27rem;
-	}
+
 	#about-us h1{
 		text-align: center;
 		color: black;
+		padding-top: 4px;
 		font-size: 27px;
 		font-weight: 300;
 		margin-bottom: 1.5rem;
@@ -8540,8 +9301,8 @@ form .form-btn{
 	.about-text p{
 		font-size: 11px;
 		color: black;
-		font-weight: 400;
-		line-height: 20px;
+		font-weight: 420;
+		line-height: 23px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
@@ -8718,7 +9479,7 @@ form .form-btn{
 	.thumb li{
 		list-style: none;
 		display: inline-block;
-		margin:  0 13px;
+		margin:  0 15px;
 		cursor: pointer;
 		transition: 0.5s;
 	}
@@ -8880,7 +9641,7 @@ form .form-btn{
 	.header ul{
 		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 90vh;
 		background: #000;
 		top: 85px;
 		left: -100%;
@@ -8890,13 +9651,13 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
+		padding-top: 15px;
 		margin: 50px 0;
 		line-height: 23px;
 	}
 	.header ul li a{
 		font-size: 17px;
-		letter-spacing: 5px;
+		letter-spacing: 4px;
 		font-weight: 400;
 	}
 	.header .activer{
@@ -8919,6 +9680,7 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 97%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -8950,16 +9712,17 @@ form .form-btn{
 		margin: auto;
 		text-align: left;
 		color: black;
+		font-weight: 430px;
 		font-size: 10px;
-		line-height: 17px;
+		line-height: 22px;
 		margin-bottom: 2rem;
 	}
 	.textbox-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 15px;
+		padding: 8px 15px;
 		border-radius: 20px;
 		cursor: pointer;
 		margin-bottom: 4.5rem;
@@ -8985,6 +9748,8 @@ form .form-btn{
 	#about-us h1{
 		text-align: center;
 		color: black;
+		padding-top: 10px;
+		margin-top: 0;
 		font-size: 27px;
 		font-weight: 300;
 		margin-bottom: 1.5rem;
@@ -9001,16 +9766,16 @@ form .form-btn{
 		align-items: center;
 	}
 	.about-text{
-		width: 66%;
+		width: 67%;
 		margin: auto;
 		max-width: 600;
 	}
 	.about-text p{
 		font-size: 10px;
 		color: black;
-		font-weight: 400;
+		font-weight: 440;
 		text-align: left;
-		line-height: 17px;
+		line-height: 22px;
 		margin-bottom: 2rem;
 	}
 	.about-btn{
@@ -9351,7 +10116,7 @@ form .form-btn{
 	.header ul{
 		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 85vh;
 		background: #000;
 		top: 85px;
 		left: -100%;
@@ -9361,9 +10126,9 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
+		padding-top: 12px;
 		margin: 50px 0;
-		line-height: 23px;
+		line-height: 21px;
 	}
 	.header ul li a{
 		font-size: 17px;
@@ -9390,6 +10155,7 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 97%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -9421,8 +10187,9 @@ form .form-btn{
 		margin: auto;
 		text-align: left;
 		color: black;
+		font-weight: 450;
 		font-size: 10px;
-		line-height: 18px;
+		line-height: 22px;
 		margin-bottom: 2rem;
 	}
 	.textbox-btn{
@@ -9472,16 +10239,16 @@ form .form-btn{
 		align-items: center;
 	}
 	.about-text{
-		width: 68%;
+		width: 70%;
 		margin: auto;
 		max-width: 600;
 	}
 	.about-text p{
 		font-size: 10px;
 		color: black;
-		font-weight: 400;
+		font-weight: 450;
 		text-align: left;
-		line-height: 18px;
+		line-height: 21px;
 		margin-bottom: 2rem;
 	}
 	.about-btn{
@@ -9824,7 +10591,7 @@ form .form-btn{
 	.header ul{
 		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 80vh;
 		background: #000;
 		top: 85px;
 		left: -100%;
@@ -9834,9 +10601,9 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
-		margin: 50px 0;
-		line-height: 21px;
+		padding-top: 12px;
+		margin: 45px 0;
+		line-height: 18px;
 	}
 	.header ul li a{
 		font-size: 16px;
@@ -9863,12 +10630,13 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 97%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.text-box h1{
 		font-size: 12px;
-		font-weight: 400;
+		font-weight: 450;
 		color: black;
 		letter-spacing: 1px;
 		margin-bottom: 5px;
@@ -9894,19 +10662,20 @@ form .form-btn{
 		margin: auto;
 		text-align: left;
 		color: black;
+		font-weight: 450;
 		font-size: 10px;
-		line-height: 18px;
-		margin-bottom: 1.5rem;
+		line-height: 21px;
+		margin-bottom: 2rem;
 	}
 	.textbox-btn{
 		width: 8rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 15px;
+		padding: 8px 18px;
 		border-radius: 20px;
 		cursor: pointer;
-		margin-bottom: 4.3rem;
+		margin-bottom: 5rem;
 	}
 	.textbox-btn a{
 		font-size: 12px;
@@ -9916,25 +10685,26 @@ form .form-btn{
 	}
 	.banner-img{
 		width: 60%;
-		height: 40%;
+		height: 35%;
 		padding-right: 0;
 		margin-right: 0;
 		margin: auto;
 	}
 	.banner-img img{
-		height: 230px;
+		height: 200px;
 		width: 87%;
 	}
 	#about-us{
-		margin-top: 22rem;
+		margin-top: 2rem;
 	}
 	#about-us h1{
 		text-align: center;
 		color: black;
+		padding-top: 5px;
 		font-size: 25px;
 		font-weight: 300;
 		margin-bottom: 1.5rem;
-		letter-spacing: 3px;
+		letter-spacing: 1px;
 	}
 	.about-box{
 		width: 90%;
@@ -9947,7 +10717,7 @@ form .form-btn{
 		align-items: center;
 	}
 	.about-text{
-		width: 75%;
+		width: 80%;
 		margin: auto;
 		max-width: 600;
 	}
@@ -9955,13 +10725,13 @@ form .form-btn{
 		font-size: 10px;
 		color: black;
 		padding-left: 10px;
-		font-weight: 400;
+		font-weight: 450;
 		text-align: left;
-		line-height: 18px;
+		line-height: 22px;
 		margin-bottom: 1.5rem;
 	}
 	.about-btn{
-		width: 8rem;
+		width: 9rem;
 		outline: none;
 		border:none;
 		background: darkred;
@@ -10033,12 +10803,12 @@ form .form-btn{
 	}
 	#menu h4{
 		text-align: center;
-		font-size: 23px;
-		letter-spacing: 3px;
+		font-size: 21px;
+		letter-spacing: 2px;
 		font-weight: 400;
 		color: black;
 		padding-top: 20px;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
 	}
 	.menu-list{
 		max-width: 100%;
@@ -10302,7 +11072,7 @@ form .form-btn{
 	}
 	.header ul{
 		width: 100%;
-		height: 100vh;
+		height: 80vh;
 		background: #000;
 		top: 80px;
 		left: -100%;
@@ -10312,8 +11082,8 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
-		margin: 48px 0;
+		padding-top: 12px;
+		margin: 47px 0;
 		line-height: 20px;
 	}
 	.header ul li a{
@@ -10337,6 +11107,7 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 98%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -10368,8 +11139,8 @@ form .form-btn{
 		text-align: left;
 		color: black;
 		font-size: 10px;
-		font-weight: 400;
-		line-height: 19px;
+		font-weight: 450;
+		line-height: 21px;
 		margin-bottom: 2rem;
 	}
 	.textbox-btn{
@@ -10396,11 +11167,11 @@ form .form-btn{
 		margin: auto;
 	}
 	.banner-img img{
-		height: 300px;
+		height: 270px;
 		width: 100%;
 	}
 	#about-us{
-		margin-top: 27rem;
+		margin-top: 2rem;
 	}
 	#about-us h1{
 		text-align: center;
@@ -10422,7 +11193,7 @@ form .form-btn{
 		align-items: center;
 	}
 	.about-text{
-		width: 85%;
+		width: 87%;
 		margin: auto;
 		max-width: 550;
 	}
@@ -10430,9 +11201,9 @@ form .form-btn{
 		font-size: 10px;
 		letter-spacing: 0;
 		color: black;
-		font-weight: 400;
+		font-weight: 450;
 		text-align: left;
-		line-height: 16px;
+		line-height: 20px;
 		margin-bottom: 1.7rem;
 	}
 	.about-btn{
@@ -10476,7 +11247,7 @@ form .form-btn{
 	  user-select: none;
 	}
 	.next{
-		right: 20px;
+		right: -15px;
 	}
 	.dot {
 	  cursor: pointer;
@@ -10789,7 +11560,7 @@ form .form-btn{
 	}
 	.header ul{
 		width: 100%;
-		height: 100vh;
+		height: 80vh;
 		background: #000;
 		top: 80px;
 		left: -100%;
@@ -10799,12 +11570,12 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 10px;
+		padding-top: 12px;
 		margin: 48px 0;
 		line-height: 20px;
 	}
 	.header ul li a{
-		font-size: 17px;
+		font-size: 16px;
 		letter-spacing: 5px;
 	}
 	#check:checked ~ ul{
@@ -10824,6 +11595,7 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 98%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -10849,14 +11621,14 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 75%;
+		width: 77%;
 		max-width: 600;
 		margin: auto;
 		text-align: left;
 		color: black;
 		font-size: 10px;
-		font-weight: 400;
-		line-height: 19px;
+		font-weight: 450;
+		line-height: 21px;
 		margin-bottom: 2rem;
 	}
 	.textbox-btn{
@@ -10886,7 +11658,9 @@ form .form-btn{
 		height: 300px;
 		width: 100%;
 	}
-
+	#about-us{
+		margin-top: 1rem;
+	}
 	#about-us h1{
 		text-align: center;
 		color: black;
@@ -10907,7 +11681,7 @@ form .form-btn{
 		align-items: center;
 	}
 	.about-text{
-		width: 85%;
+		width: 87%;
 		margin: auto;
 		max-width: 550;
 	}
@@ -10915,9 +11689,9 @@ form .form-btn{
 		font-size: 10px;
 		letter-spacing: 0;
 		color: black;
-		font-weight: 400;
+		font-weight: 450;
 		text-align: left;
-		line-height: 16px;
+		line-height: 18px;
 		margin-bottom: 1.7rem;
 	}
 	.about-btn{
@@ -10961,7 +11735,7 @@ form .form-btn{
 	  user-select: none;
 	}
 	.next{
-		right: 20px;
+		right: -12px;
 	}
 	.dot {
 	  cursor: pointer;
@@ -11258,7 +12032,7 @@ form .form-btn{
 		color: white;
 	}
 }
-@media(max-width:426px){
+@media(max-width:430px){
 	.checkbtn{
 		display: block;
 		color: white;
@@ -11275,7 +12049,7 @@ form .form-btn{
 	}
 	.header ul{
 		width: 100%;
-		height: 100vh;
+		height: 50vh;
 		background: #000;
 		top: 80px;
 		left: -100%;
@@ -11285,12 +12059,12 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 6px;
-		margin: 45px 0;
+		padding-top: 15px;
+		margin: 43px 0;
 		line-height: 20px;
 	}
 	.header ul li a{
-		font-size: 17px;
+		font-size: 15px;
 		letter-spacing: 4px;
 	}
 	#check:checked ~ ul{
@@ -11310,6 +12084,8 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 98%;
+		flex-grow: 1;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -11335,22 +12111,22 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 74%;
+		width: 78%;
 		max-width: 500;
 		margin: auto;
 		text-align: left;
 		color: black;
-		font-weight: 420px;
-		font-size: 8px;
-		line-height: 16px;
+		font-weight: 450px;
+		font-size: 9px;
+		line-height: 20px;
 		margin-bottom: 1.7rem;
 	}
 	.textbox-btn{
-		width: 7rem;
+		width: 8rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 6px 14px;
+		padding: 7px 20px;
 		border-radius: 20px;
 		cursor: pointer;
 		margin-bottom: 4.5rem;
@@ -11373,7 +12149,7 @@ form .form-btn{
 		width: 100%;
 	}
 	#about-us{
-		margin-top: 23rem;
+		margin-top: 1rem;
 	}
 	#about-us h1{
 		text-align: center;
@@ -11385,7 +12161,7 @@ form .form-btn{
 		letter-spacing: 2px;
 	}
 	.about-box{
-		width: 80%;
+		width: 85%;
 		flex-grow: 1;
 		margin: 0 auto;
 		display: block;
@@ -11400,11 +12176,11 @@ form .form-btn{
 		max-width: 500;
 	}
 	.about-text p{
-		font-size: 8px;
+		font-size: 9px;
 		color: black;
-		font-weight: 400;
+		font-weight: 450;
 		text-align: left;
-		line-height: 15px;
+		line-height: 19px;
 		margin-bottom: 1.7rem;
 	}
 	.about-btn{
@@ -11451,7 +12227,7 @@ form .form-btn{
 	  user-select: none;
 	}
 	.next{
-		right: 1rem;
+		right: -12px;
 	}
 	.dot {
 	  cursor: pointer;
@@ -11750,7 +12526,7 @@ form .form-btn{
 		color: white;
 	}
 }
-@media(max-width:400px){
+@media(max-width:426px){
 	.checkbtn{
 		display: block;
 		color: white;
@@ -11767,7 +12543,7 @@ form .form-btn{
 	}
 	.header ul{
 		width: 100%;
-		height: 90vh;
+		height: 75vh;
 		background: #000;
 		top: 80px;
 		left: -100%;
@@ -11777,9 +12553,503 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		padding-top: 5px;
-		margin: 45px 0;
+		padding-top: 6px;
+		margin: 43px 0;
 		line-height: 18px;
+	}
+	.header ul li a{
+		font-size: 15px;
+		letter-spacing: 4px;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	.header-icon{
+		display: none;
+	}
+	#main .container{
+		padding: 10px 0;
+		margin-top: 2rem;
+	}
+	.container{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+		width: 98%;
+		flex-grow: 1;
+		flex-grow: 1;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-box h1{
+		font-size: 13px;
+		font-weight: 400;
+		color: black;
+		margin-bottom: 5px;
+	}
+	.text-box h2{
+		font-size: 41px;
+		color: black;
+		letter-spacing: 2px;
+		font-weight: 500;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.text-box h3{
+		font-size: 28px;
+		color: black;
+		letter-spacing: 3px;
+		font-weight: 400;
+		margin-bottom: 2rem;
+	}
+	.text-box p{
+		width: 78%;
+		max-width: 500;
+		margin: auto;
+		text-align: left;
+		color: black;
+		font-weight: 450px;
+		font-size: 9px;
+		line-height: 19px;
+		margin-bottom: 1.7rem;
+	}
+	.textbox-btn{
+		width: 8rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 7px 20px;
+		border-radius: 20px;
+		cursor: pointer;
+		margin-bottom: 4.5rem;
+	}
+	.textbox-btn a{
+		font-size: 11px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.banner-img{
+		width: 70%;
+		height: 40%;
+		padding-right: 0;
+		margin-right: 0;
+		margin: auto;
+	}
+	.banner-img img{
+		height: 260px;
+		width: 100%;
+	}
+	#about-us{
+		margin-top: 2rem;
+	}
+	#about-us h1{
+		text-align: center;
+		color: black;
+		padding-top: 20px;
+		font-size: 25px;
+		font-weight: 300;
+		margin-bottom: 1.5rem;
+		letter-spacing: 2px;
+	}
+	.about-box{
+		width: 85%;
+		flex-grow: 1;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.about-text{
+		width: 80%;
+		margin: auto;
+		max-width: 500;
+	}
+	.about-text p{
+		font-size: 9px;
+		color: black;
+		font-weight: 450;
+		text-align: left;
+		line-height: 17px;
+		margin-bottom: 1.7rem;
+	}
+	.about-btn{
+		width: 7rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 5px 12px;
+		margin-bottom: 4rem;
+		border-radius: 20px;
+	}
+	.about-btn a{
+		font-size: 11px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.carasal{
+		width: 70%;
+		margin:auto;
+		flex-grow: 1;
+	}
+	.slideshow-container {
+	  max-width: 750px;
+	  max-height: 850px;
+	  position: relative;
+	  margin: auto;
+	}
+	.mySlides img{
+		height: 100%;
+	}
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: -100%;
+	  padding: 15px;
+	  margin-top: -22px;
+	  color: black;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+	.next{
+		right: -12px;
+	}
+	.dot {
+	  cursor: pointer;
+	  height: 13px;
+	  width: 13px;
+	  margin: 0 3px;
+	  background-color: darkred;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	.mySlides .text{
+		font-size: 15px;
+		display: none;
+		padding-top: 10px;
+	}
+	#menu{
+	 	width: 100%;
+	 	padding-top: 1rem;
+	 	scroll-behavior: smooth;
+	}
+	#menu h4{
+		text-align: center;
+		font-size: 20px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		color: black;
+		padding-top: 20px;
+		margin-bottom: 1.5rem;
+	}
+	.menu-list{
+		max-width: 90%;
+		flex-grow: 1;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		display: block;
+		justify-content: center;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.menu-images{
+		display: block;
+		justify-content: center;
+		grid-template-columns: 20% 20% 20% ;
+	}
+	.menu-images .card{
+		max-width: 55%;
+		margin:auto;
+		max-height: 50%;
+		border: 1px solid grey;
+		border-radius: 10px;
+		margin-block: 2rem;
+	}
+	.menu-images .card img{
+		max-width: 100%;
+		padding-left: 0;
+		justify-content: center;
+		align-items: center;
+		max-height: 50%;
+	}
+	.card-text h1{
+		font-size: 13px;
+		color: white;
+		font-weight: 500;
+		margin-top: 20px;
+		border-top: 1px solid grey;
+		padding-top: 10px;
+		background-color: darkred;
+		padding-bottom: 10px;
+		letter-spacing: 1px;
+		border-bottom: 1px solid grey;
+		margin-bottom: 1rem;
+	}
+	.card-text h2{
+		font-size: 20px;
+		font-weight: 600;
+		color: black;
+		padding-bottom: 10px;
+	}
+	.book h1{
+		text-align: center;
+		font-size: 15px;
+		font-weight: 600;
+		padding-left: 1rem;
+		padding-right: 0;
+		letter-spacing: 1px;
+		
+		margin-bottom: 1rem;
+		color: black;
+	}
+	.book-tab{
+		width: 100%;
+		margin: auto;
+		flex-grow: 1;
+		padding: 10px 0;
+	}
+	main{
+		margin-right: 2rem;
+	}
+	.content .imgBox{
+		width: 325px;
+		display: flex;
+		margin-left: 0;
+		padding-left:0;
+		justify-content: center;
+	}	
+	.content .imgBox img{
+		max-width: 198px;
+		padding-top: 15px;
+		padding-right: 2.5rem;
+		max-height: 300px;
+		margin-bottom: 6rem;
+	}
+	.thumb{
+		position: absolute;
+		left: 40%;
+		bottom: 20px;
+		padding-top: 5rem;
+		transform: translateX(-40%);
+		display: flex;
+	}
+	.thumb li{
+		list-style: none;
+		display: inline-block;
+		margin:  0 11px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+	.thumb li img{
+		max-width: 38px;
+		max-height: 40px;
+	}
+	#contact h1{
+		text-align: center;
+		font-size: 23px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		font-family: 'Lilita One', cursive;
+		margin-bottom: 1.5rem;
+	}
+	.contact-box p{
+		width: 55%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 9px;
+		max-width: 500;
+		margin-bottom: 1.2rem;
+	}
+	.container-box{
+		flex-grow: 1;
+		display: block;
+		width: 83%;
+		text-align: center;
+		margin: auto;
+	}
+	.box-1,.box-2{
+		display: block;
+		margin-left: 0;
+		padding-left: 0;
+		text-align: center;
+	}
+	.box-1 h2, .box-2 h2{
+		font-size: 18px;
+		font-weight: 500;
+		padding-top: 5px;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+		color: black;
+	}
+	.box-1 ul li{
+		list-style: none;
+		color: black;
+		font-size: 12px;
+		text-align: center;
+		padding-right: 20px;
+		letter-spacing: 0;
+		font-weight: 400;
+		padding-bottom: 5px;
+	}
+	.box-2 ol li{
+		list-style: none;
+		letter-spacing: 1px;
+		color: black;
+		font-size: 13px;
+		font-weight: 500;
+		padding-right: 50px;
+		margin-bottom: 1rem;
+	}
+	form{
+		margin-top: 1rem;
+		width: 75%;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		display: block;
+		border: 1px solid grey;
+		flex-grow: 1;
+		padding: 10px 0;
+		border-radius: 5px;
+		margin-bottom: 2rem;
+	}
+	form h3{
+		font-size: 20px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		font-family: 'Lilita One', cursive;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	form input{
+		justify-content: center;
+		align-items: center;
+		width: 14rem;
+		color: black;
+		letter-spacing: 1px;
+		font-size: 11px;
+		flex-grow: 1;
+		outline: none;
+		border: 1px solid grey;
+		margin: auto;
+		font-weight: 400;
+		margin-bottom: 1rem;
+		display: block;
+		border-radius: 3px;
+		padding: 8px 13px;
+	}
+	form .form-btn{
+		width: 65%;
+		font-size: 13px;
+		outline: none;
+		border: none;
+		border-radius: 8px;
+		letter-spacing: 2px;
+		font-weight: 500;
+		background: darkred;
+		color: white;
+		padding: 8px 15px;
+	}
+
+	#footer{
+		width: 100%;
+		padding: 20px 0;
+		flex-grow: 1;
+		scroll-behavior: smooth;
+		display: block;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.85),
+		rgb(0, 0, 0, 0.86)), url(./images/img9.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.footer-links h1{
+		font-size: 20px;
+		letter-spacing: 5px;
+		color: white;
+		padding-top: 10px;
+		margin-bottom: 1.5rem;
+		font-weight: 200;
+	}
+	.footer-links ul li{
+		margin-bottom: 5px;
+	}
+	.footer-links ul li a{
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-decoration: none;
+		color: white;
+	}
+	.footer-links ion-icon{
+		font-size: 20px;
+		height: 13px;
+		width: 13px;
+		padding-right: 6px;
+		color: white;
+	}
+	#footer-end{
+		padding: 12px 0;
+		width: 100%;
+		background: darkred;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#footer-end p{
+		text-align: center;
+		font-size: 13px;
+		letter-spacing: 2px;
+		font-weight: 400;
+		color: white;
+	}
+}
+@media(max-width:414px){
+	.checkbtn{
+		display: block;
+		color: white;
+	}
+	.header{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		flex-grow: 1;
+		background: darkred;
+	}
+	.header ul{
+		width: 100%;
+		height: 60vh;
+		background: #000;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		z-index: 100;
+		transition: all .5s;
+	}
+	.header ul li{
+		display: block;
+		padding-top: 17px;
+		margin: 43px 0;
+		line-height: 17px;
 	}
 	.header ul li a{
 		font-size: 15px;
@@ -11802,6 +13072,7 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 98%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -11832,17 +13103,17 @@ form .form-btn{
 		margin: auto;
 		text-align: left;
 		color: black;
-		font-weight: 400px;
-		font-size: 8px;
-		line-height: 15px;
+		font-weight: 450px;
+		font-size: 9px;
+		line-height: 19px;
 		margin-bottom: 1.7rem;
 	}
 	.textbox-btn{
-		width: 7rem;
+		width: 8rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 6px 15px;
+		padding: 7px 18px;
 		border-radius: 20px;
 		cursor: pointer;
 		margin-bottom: 4.5rem;
@@ -11854,7 +13125,7 @@ form .form-btn{
 		text-decoration: none;
 	}
 	.banner-img{
-		width: 70%;
+		width: 80%;
 		height: 40%;
 		padding-right: 0;
 		margin-right: 0;
@@ -11863,12 +13134,15 @@ form .form-btn{
 	.banner-img img{
 		height: 260px;
 		width: 100%;
+		padding-bottom: 1.5rem;
 	}
-
+	#about-us{
+		margin-top: 2rem;
+	}
 	#about-us h1{
 		text-align: center;
 		color: black;
-		padding-top: 20px;
+		padding-top: 8px;
 		font-size: 23px;
 		font-weight: 300;
 		margin-bottom: 1.5rem;
@@ -11890,19 +13164,19 @@ form .form-btn{
 		max-width: 500;
 	}
 	.about-text p{
-		font-size: 8px;
+		font-size: 9px;
 		color: black;
-		font-weight: 400;
+		font-weight: 450;
 		text-align: left;
-		line-height: 13px;
+		line-height: 17px;
 		margin-bottom: 1.7rem;
 	}
 	.about-btn{
-		width: 7rem;
+		width: 8rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 7px 15px;
+		padding: 7px 17px;
 		margin-bottom: 4rem;
 		border-radius: 20px;
 	}
@@ -11938,7 +13212,7 @@ form .form-btn{
 	  user-select: none;
 	}
 	.next{
-		right: 1rem;
+		right: -11px;
 	}
 	.dot {
 	  cursor: pointer;
@@ -12238,7 +13512,7 @@ form .form-btn{
 		color: white;
 	}
 }
-@media(max-width:374px){
+@media(max-width:400px){
 	.checkbtn{
 		display: block;
 		color: white;
@@ -12255,7 +13529,7 @@ form .form-btn{
 	}
 	.header ul{
 		width: 100%;
-		height: 90vh;
+		height: 80vh;
 		background: #000;
 		top: 80px;
 		left: -100%;
@@ -12266,8 +13540,497 @@ form .form-btn{
 	.header ul li{
 		display: block;
 		padding-top: 10px;
-		margin: 45px 0;
-		line-height: 20px;
+		margin: 43px 0;
+		line-height: 17px;
+	}
+	.header ul li a{
+		font-size: 15px;
+		letter-spacing: 3px;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	.header-icon{
+		display: none;
+	}
+	#main .container{
+		padding: 10px 0;
+		margin-top: 2rem;
+	}
+	.container{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+		width: 98%;
+		flex-grow: 1;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-box h1{
+		font-size: 13px;
+		font-weight: 400;
+		color: black;
+		margin-bottom: 5px;
+	}
+	.text-box h2{
+		font-size: 36px;
+		color: black;
+		letter-spacing: 4px;
+		font-weight: 450;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.text-box h3{
+		font-size: 25px;
+		color: black;
+		letter-spacing: 2px;
+		font-weight: 400;
+		margin-bottom: 2rem;
+	}
+	.text-box p{
+		width: 75%;
+		max-width: 550;
+		margin: auto;
+		text-align: left;
+		color: black;
+		font-weight: 450px;
+		font-size: 9px;
+		line-height: 19px;
+		margin-bottom: 1.7rem;
+	}
+	.textbox-btn{
+		width: 8rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 7px 18px;
+		border-radius: 20px;
+		cursor: pointer;
+		margin-bottom: 4.5rem;
+	}
+	.textbox-btn a{
+		font-size: 12px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.banner-img{
+		width: 70%;
+		height: 40%;
+		padding-right: 0;
+		margin-right: 0;
+		margin: auto;
+	}
+	.banner-img img{
+		height: 260px;
+		width: 100%;
+	}
+
+	#about-us h1{
+		text-align: center;
+		color: black;
+		padding-top: 20px;
+		font-size: 23px;
+		font-weight: 300;
+		margin-bottom: 1.5rem;
+		letter-spacing: 1px;
+	}
+	.about-box{
+		width: 85%;
+		flex-grow: 1;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.about-text{
+		width: 83%;
+		margin: auto;
+		max-width: 500;
+	}
+	.about-text p{
+		font-size: 9px;
+		color: black;
+		font-weight: 450;
+		text-align: left;
+		line-height: 17px;
+		margin-bottom: 1.7rem;
+	}
+	.about-btn{
+		width: 8rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 7px 17px;
+		margin-bottom: 4rem;
+		border-radius: 20px;
+	}
+	.about-btn a{
+		font-size: 10px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.carasal{
+		width: 73%;
+		margin:auto;
+		flex-grow: 1;
+	}
+	.slideshow-container {
+	  max-width: 740px;
+	  max-height: 800px;
+	  position: relative;
+	  margin: auto;
+	}
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: -100%;
+	  padding: 15px;
+	  margin-top: -22px;
+	  color: black;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+	.next{
+		right: -11px;
+	}
+	.dot {
+	  cursor: pointer;
+	  height: 13px;
+	  width: 13px;
+	  margin: 0 3px;
+	  background-color: darkred;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	.mySlides .text{
+		font-size: 15px;
+		display: none;
+		padding-top: 10px;
+	}
+	#menu{
+	 	width: 100%;
+	 	padding-top: 1rem;
+	 	scroll-behavior: smooth;
+	}
+	#menu h4{
+		text-align: center;
+		font-size: 20px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		color: black;
+		padding-top: 20px;
+		margin-bottom: 1rem;
+	}
+	.menu-list{
+		max-width: 90%;
+		flex-grow: 1;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		display: block;
+		justify-content: center;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.menu-images{
+		display: block;
+		justify-content: center;
+		grid-template-columns: 20% 20% 20% ;
+	}
+	.menu-images .card{
+		max-width: 60%;
+		margin:auto;
+		max-height: 40%;
+		border: 1px solid grey;
+		border-radius: 10px;
+		margin-block: 2rem;
+	}
+	.menu-images .card img{
+		max-width: 100%;
+		padding-left: 0;
+		justify-content: center;
+		align-items: center;
+		max-height: 30%;
+	}
+	.card-text h1{
+		font-size: 13px;
+		color: white;
+		font-weight: 500;
+		margin-top: 20px;
+		border-top: 1px solid grey;
+		padding-top: 10px;
+		background-color: darkred;
+		padding-bottom: 10px;
+		letter-spacing: 1px;
+		border-bottom: 1px solid grey;
+		margin-bottom: 1rem;
+	}
+	.card-text h2{
+		font-size: 18px;
+		font-weight: 600;
+		color: black;
+		padding-bottom: 10px;
+	}
+	.book h1{
+		text-align: center;
+		font-size: 15px;
+		font-weight: 600;
+		padding-left: 1rem;
+		padding-right: 0;
+		letter-spacing: 1px;
+		
+		margin-bottom: 1rem;
+		color: black;
+	}
+	.book-tab{
+		width: 100%;
+		margin: auto;
+		flex-grow: 1;
+		padding: 10px 0;
+	}
+	main{
+		margin-right: 1rem;
+		padding-left: 0;
+		margin-left: 2rem;
+	}
+	.content .imgBox{
+		width: 330px;
+		display: flex;
+		margin-left: 0;
+		padding-left:2rem;
+		justify-content: center;
+	}	
+	.content .imgBox img{
+		max-width: 198px;
+		padding-top: 15px;
+		max-height: 300px;
+		margin-bottom: 6rem;
+	}
+	.thumb{
+		position: absolute;
+		left: 40%;
+		bottom: 20px;
+		padding-top: 5rem;
+		transform: translateX(-40%);
+		display: flex;
+	}
+	.thumb li{
+		list-style: none;
+		display: inline-block;
+		margin:  0 11px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+	.thumb li img{
+		max-width: 38px;
+		max-height: 40px;
+	}
+	#contact h1{
+		text-align: center;
+		font-size: 23px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		font-family: 'Lilita One', cursive;
+		margin-bottom: 1.5rem;
+	}
+	.contact-box p{
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 10px;
+		max-width: 500;
+		margin-bottom: 1.2rem;
+	}
+	.container-box{
+		flex-grow: 1;
+		display: block;
+		width: 80%;
+		text-align: center;
+		margin: auto;
+	}
+	.box-1,.box-2{
+		display: block;
+		margin-left: 0;
+		padding-left: 0;
+		text-align: center;
+	}
+	.box-1 h2, .box-2 h2{
+		font-size: 18px;
+		font-weight: 500;
+		padding-top: 5px;
+		letter-spacing: 1px;
+		margin-bottom: 1rem;
+		color: black;
+	}
+	.box-1 ul li{
+		list-style: none;
+		color: black;
+		font-size: 11px;
+		text-align: center;
+		padding-right: 25px;
+		letter-spacing: 0;
+		font-weight: 400;
+		padding-bottom: 3px;
+	}
+	.box-2 ol li{
+		list-style: none;
+		letter-spacing: 1px;
+		color: black;
+		font-size: 12px;
+		font-weight: 500;
+		padding-right: 53px;
+		margin-bottom: 1rem;
+	}
+	form{
+		margin-top: 1rem;
+		width: 83%;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		display: block;
+		border: 1px solid grey;
+		flex-grow: 1;
+		padding: 10px 0;
+		border-radius: 5px;
+		margin-bottom: 2rem;
+	}
+	form h3{
+		font-size: 15px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		font-family: 'Lilita One', cursive;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	form input{
+		justify-content: center;
+		align-items: center;
+		width: 13rem;
+		color: black;
+		letter-spacing: 1px;
+		font-size: 11px;
+		flex-grow: 1;
+		outline: none;
+		border: 1px solid grey;
+		margin: auto;
+		font-weight: 400;
+		margin-bottom: 1rem;
+		display: block;
+		border-radius: 3px;
+		padding: 7px 13px;
+	}
+	form .form-btn{
+		width: 65%;
+		font-size: 12px;
+		outline: none;
+		border: none;
+		border-radius: 8px;
+		letter-spacing: 2px;
+		font-weight: 500;
+		background: darkred;
+		color: white;
+		padding: 8px 13px;
+	}
+
+	#footer{
+		width: 100%;
+		padding: 20px 0;
+		flex-grow: 1;
+		scroll-behavior: smooth;
+		display: block;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.85),
+		rgb(0, 0, 0, 0.86)), url(./images/img9.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.footer-links h1{
+		font-size: 20px;
+		letter-spacing: 5px;
+		color: white;
+		padding-top: 10px;
+		margin-bottom: 1.5rem;
+		font-weight: 200;
+	}
+	.footer-links ul li{
+		margin-bottom: 5px;
+	}
+	.footer-links ul li a{
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-decoration: none;
+		color: white;
+	}
+	.footer-links ion-icon{
+		font-size: 20px;
+		height: 11px;
+		width: 11px;
+		padding-right: 5px;
+		color: white;
+	}
+	#footer-end{
+		padding: 12px 0;
+		width: 100%;
+		background: darkred;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#footer-end p{
+		text-align: center;
+		font-size: 12px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		color: white;
+	}
+}
+@media(max-width:390px){
+	.checkbtn{
+		display: block;
+		color: white;
+	}
+	.header{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		flex-grow: 1;
+		background: darkred;
+	}
+	.header ul{
+		width: 100%;
+		height: 50vh;
+		background: #000;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		z-index: 100;
+		transition: all .5s;
+	}
+	.header ul li{
+		display: block;
+		padding-top: 14px;
+		margin: 43px 0;
+		line-height: 19px;
 	}
 	.header ul li a{
 		font-size: 15px;
@@ -12290,6 +14053,7 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 98%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -12315,22 +14079,22 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 75%;
+		width: 80%;
 		max-width: 500;
 		margin: auto;
 		text-align: left;
 		color: black;
-		font-weight: 400px;
-		font-size: 8px;
-		line-height: 14px;
+		font-weight: 450px;
+		font-size: 9px;
+		line-height: 18px;
 		margin-bottom: 1.7rem;
 	}
 	.textbox-btn{
-		width: 7rem;
+		width: 8rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 6px 12px;
+		padding: 7px 15px;
 		border-radius: 20px;
 		cursor: pointer;
 		margin-bottom: 4.5rem;
@@ -12363,7 +14127,7 @@ form .form-btn{
 		letter-spacing: 1px;
 	}
 	.about-box{
-		width: 80%;
+		width: 87%;
 		flex-grow: 1;
 		margin: 0 auto;
 		display: block;
@@ -12373,24 +14137,24 @@ form .form-btn{
 		align-items: center;
 	}
 	.about-text{
-		width: 85%;
+		width: 86%;
 		margin: auto;
 		max-width: 500;
 	}
 	.about-text p{
-		font-size: 8px;
+		font-size: 9px;
 		color: black;
-		font-weight: 400;
+		font-weight: 450;
 		text-align: left;
-		line-height: 16px;
-		margin-bottom: 1.7rem;
+		line-height: 18px;
+		margin-bottom: 1.5rem;
 	}
 	.about-btn{
-		width: 7rem;
+		width: 8rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 5px 12px;
+		padding: 5px 15px;
 		margin-bottom: 3.5rem;
 		border-radius: 20px;
 	}
@@ -12426,13 +14190,996 @@ form .form-btn{
 	  user-select: none;
 	}
 	.next{
-		right: 1rem;
+		right: -10px;
 	}
 	.dot {
 	  cursor: pointer;
 	  height: 13px;
 	  width: 13px;
 	  margin: 0 3px;
+	  background-color: darkred;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	.mySlides .text{
+		font-size: 15px;
+		display: none;
+		padding-top: 10px;
+	}
+	#menu{
+	 	width: 100%;
+	 	padding-top: 1rem;
+	 	scroll-behavior: smooth;
+	}
+	#menu h4{
+		text-align: center;
+		font-size: 18px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		color: black;
+		padding-top: 20px;
+		margin-bottom: 1rem;
+	}
+	.menu-list{
+		max-width: 90%;
+		flex-grow: 1;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		display: block;
+		justify-content: center;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.menu-images{
+		display: block;
+		justify-content: center;
+		grid-template-columns: 20% 20% 20% ;
+	}
+	.menu-images .card{
+		max-width: 60%;
+		margin:auto;
+		max-height: 40%;
+		border: 1px solid grey;
+		border-radius: 10px;
+		margin-block: 2rem;
+	}
+	.menu-images .card img{
+		max-width: 100%;
+		padding-left: 0;
+		justify-content: center;
+		align-items: center;
+		max-height: 25%;
+	}
+	.card-text h1{
+		font-size: 13px;
+		color: white;
+		font-weight: 500;
+		margin-top: 20px;
+		border-top: 1px solid grey;
+		padding-top: 10px;
+		background-color: darkred;
+		padding-bottom: 10px;
+		letter-spacing: 1px;
+		border-bottom: 1px solid grey;
+		margin-bottom: 1rem;
+	}
+	.card-text h2{
+		font-size: 18px;
+		font-weight: 600;
+		color: black;
+		padding-bottom: 10px;
+	}
+	.book h1{
+		text-align: center;
+		font-size: 15px;
+		font-weight: 600;
+		padding-left: 1rem;
+		padding-right: 0;
+		letter-spacing: 1px;	
+		margin-bottom: 1rem;
+		color: black;
+	}
+	.book-tab{
+		width: 100%;
+		margin: auto;
+		flex-grow: 1;
+		padding: 10px 0;
+	}
+	main{
+		margin-right: 1rem;
+		padding-left: 0;
+		margin-left: 2rem;
+	}
+	.content .imgBox{
+		width: 330px;
+		display: flex;
+		margin-left: 0;
+		padding-left:0;
+		justify-content: center;
+	}	
+	.content .imgBox img{
+		max-width: 198px;
+		padding-top: 15px;
+		max-height: 300px;
+		margin-bottom: 6rem;
+	}
+	.thumb{
+		position: absolute;
+		left: 40%;
+		bottom: 20px;
+		padding-top: 5rem;
+		transform: translateX(-40%);
+		display: flex;
+	}
+	.thumb li{
+		list-style: none;
+		display: inline-block;
+		margin:  0 11px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+	.thumb li img{
+		max-width: 38px;
+		max-height: 40px;
+	}
+	#contact h1{
+		text-align: center;
+		font-size: 23px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		font-family: 'Lilita One', cursive;
+		margin-bottom: 1.5rem;
+	}
+	.contact-box p{
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 10px;
+		max-width: 500;
+		margin-bottom: 1.2rem;
+	}
+	.container-box{
+		flex-grow: 1;
+		display: block;
+		width: 80%;
+		text-align: center;
+		margin: auto;
+	}
+	.box-1,.box-2{
+		display: block;
+		margin-left: 0;
+		padding-left: 0;
+		text-align: center;
+	}
+	.box-1 h2, .box-2 h2{
+		font-size: 18px;
+		font-weight: 500;
+		padding-top: 5px;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+		color: black;
+	}
+	.box-1 ul li{
+		list-style: none;
+		color: black;
+		font-size: 11px;
+		text-align: center;
+		padding-right: 25px;
+		letter-spacing: 0;
+		font-weight: 400;
+		padding-bottom: 3px;
+	}
+	.box-2 ol li{
+		list-style: none;
+		letter-spacing: 1px;
+		color: black;
+		font-size: 12px;
+		font-weight: 500;
+		padding-right: 53px;
+		margin-bottom: 1rem;
+	}
+	form{
+		margin-top: 1rem;
+		width: 83%;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		display: block;
+		border: 1px solid grey;
+		flex-grow: 1;
+		padding: 10px 0;
+		border-radius: 5px;
+		margin-bottom: 2rem;
+	}
+	form h3{
+		font-size: 15px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		font-family: 'Lilita One', cursive;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	form input{
+		justify-content: center;
+		align-items: center;
+		width: 12rem;
+		color: black;
+		letter-spacing: 1px;
+		font-size: 11px;
+		flex-grow: 1;
+		outline: none;
+		border: 1px solid grey;
+		margin: auto;
+		font-weight: 400;
+		margin-bottom: 1rem;
+		display: block;
+		border-radius: 3px;
+		padding: 7px 13px;
+	}
+	form .form-btn{
+		width: 65%;
+		font-size: 12px;
+		outline: none;
+		border: none;
+		border-radius: 8px;
+		letter-spacing: 2px;
+		font-weight: 500;
+		background: darkred;
+		color: white;
+		padding: 8px 13px;
+	}
+
+	#footer{
+		width: 100%;
+		padding: 20px 0;
+		flex-grow: 1;
+		scroll-behavior: smooth;
+		display: block;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.85),
+		rgb(0, 0, 0, 0.86)), url(./images/img9.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.footer-links h1{
+		font-size: 19px;
+		letter-spacing: 3px;
+		color: white;
+		padding-top: 10px;
+		margin-bottom: 1.5rem;
+		font-weight: 200;
+	}
+	.footer-links ul li{
+		margin-bottom: 5px;
+	}
+	.footer-links ul li a{
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-decoration: none;
+		color: white;
+	}
+	.footer-links ion-icon{
+		font-size: 20px;
+		height: 11px;
+		width: 11px;
+		padding-right: 5px;
+		color: white;
+	}
+	#footer-end{
+		padding: 12px 0;
+		width: 100%;
+		background: darkred;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#footer-end p{
+		text-align: center;
+		font-size: 12px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		color: white;
+	}
+}
+@media(max-width:374px){
+	.checkbtn{
+		display: block;
+		color: white;
+	}
+	.header{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		flex-grow: 1;
+		background: darkred;
+	}
+	.header ul{
+		width: 100%;
+		height: 80vh;
+		background: #000;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		z-index: 100;
+		transition: all .5s;
+	}
+	.header ul li{
+		display: block;
+		padding-top: 10px;
+		margin: 43px 0;
+		line-height: 18px;
+	}
+	.header ul li a{
+		font-size: 15px;
+		letter-spacing: 4px;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	.header-icon{
+		display: none;
+	}
+	#main .container{
+		padding: 10px 0;
+		margin-top: 2rem;
+	}
+	.container{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+		width: 98%;
+		flex-grow: 1;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-box h1{
+		font-size: 12px;
+		font-weight: 400;
+		color: black;
+		margin-bottom: 5px;
+	}
+	.text-box h2{
+		font-size: 36px;
+		color: black;
+		letter-spacing: 4px;
+		font-weight: 450;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.text-box h3{
+		font-size: 25px;
+		color: black;
+		letter-spacing: 3px;
+		font-weight: 400;
+		margin-bottom: 2rem;
+	}
+	.text-box p{
+		width: 80%;
+		max-width: 500;
+		margin: auto;
+		text-align: left;
+		color: black;
+		font-weight: 450px;
+		font-size: 9px;
+		line-height: 18px;
+		margin-bottom: 1.7rem;
+	}
+	.textbox-btn{
+		width: 8rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 7px 15px;
+		border-radius: 20px;
+		cursor: pointer;
+		margin-bottom: 4.5rem;
+	}
+	.textbox-btn a{
+		font-size: 12px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.banner-img{
+		width:78%;
+		height: 40%;
+		padding-right: 0;
+		margin-right: 0;
+		margin: auto;
+	}
+	.banner-img img{
+		height: 265px;
+		width: 100%;
+	}
+
+	#about-us h1{
+		text-align: center;
+		color: black;
+		padding-top: 20px;
+		font-size: 23px;
+		font-weight: 300;
+		margin-bottom: 1.5rem;
+		letter-spacing: 1px;
+	}
+	.about-box{
+		width: 87%;
+		flex-grow: 1;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.about-text{
+		width: 86%;
+		margin: auto;
+		max-width: 500;
+	}
+	.about-text p{
+		font-size: 9px;
+		color: black;
+		font-weight: 450;
+		text-align: left;
+		line-height: 18px;
+		margin-bottom: 1.5rem;
+	}
+	.about-btn{
+		width: 8rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 5px 15px;
+		margin-bottom: 3.5rem;
+		border-radius: 20px;
+	}
+	.about-btn a{
+		font-size: 10px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.carasal{
+		width: 73%;
+		margin:auto;
+		flex-grow: 1;
+	}
+	.slideshow-container {
+	  max-width: 700px;
+	  max-height: 800px;
+	  position: relative;
+	  margin: auto;
+	}
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: -100%;
+	  padding: 15px;
+	  margin-top: -22px;
+	  color: black;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+	.next{
+		right: -10px;
+	}
+	.dot {
+	  cursor: pointer;
+	  height: 13px;
+	  width: 13px;
+	  margin: 0 3px;
+	  background-color: darkred;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	.mySlides .text{
+		font-size: 15px;
+		display: none;
+		padding-top: 10px;
+	}
+	#menu{
+	 	width: 100%;
+	 	padding-top: 1rem;
+	 	scroll-behavior: smooth;
+	}
+	#menu h4{
+		text-align: center;
+		font-size: 18px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		color: black;
+		padding-top: 20px;
+		margin-bottom: 1rem;
+	}
+	.menu-list{
+		max-width: 90%;
+		flex-grow: 1;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		display: block;
+		justify-content: center;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.menu-images{
+		display: block;
+		justify-content: center;
+		grid-template-columns: 20% 20% 20% ;
+	}
+	.menu-images .card{
+		max-width: 60%;
+		margin:auto;
+		max-height: 40%;
+		border: 1px solid grey;
+		border-radius: 10px;
+		margin-block: 2rem;
+	}
+	.menu-images .card img{
+		max-width: 100%;
+		padding-left: 0;
+		justify-content: center;
+		align-items: center;
+		max-height: 25%;
+	}
+	.card-text h1{
+		font-size: 13px;
+		color: white;
+		font-weight: 500;
+		margin-top: 20px;
+		border-top: 1px solid grey;
+		padding-top: 10px;
+		background-color: darkred;
+		padding-bottom: 10px;
+		letter-spacing: 1px;
+		border-bottom: 1px solid grey;
+		margin-bottom: 1rem;
+	}
+	.card-text h2{
+		font-size: 18px;
+		font-weight: 600;
+		color: black;
+		padding-bottom: 10px;
+	}
+	.book h1{
+		text-align: center;
+		font-size: 15px;
+		font-weight: 600;
+		padding-left: 1rem;
+		padding-right: 0;
+		letter-spacing: 1px;	
+		margin-bottom: 1rem;
+		color: black;
+	}
+	.book-tab{
+		width: 100%;
+		margin: auto;
+		flex-grow: 1;
+		padding: 10px 0;
+	}
+	main{
+		margin-right: 1rem;
+		padding-left: 0;
+		margin-left: 2rem;
+	}
+	.content .imgBox{
+		width: 330px;
+		display: flex;
+		margin-left: 0;
+		padding-left:0;
+		justify-content: center;
+	}	
+	.content .imgBox img{
+		max-width: 198px;
+		padding-top: 15px;
+		max-height: 300px;
+		margin-bottom: 6rem;
+	}
+	.thumb{
+		position: absolute;
+		left: 40%;
+		bottom: 20px;
+		padding-top: 5rem;
+		transform: translateX(-40%);
+		display: flex;
+	}
+	.thumb li{
+		list-style: none;
+		display: inline-block;
+		margin:  0 11px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+	.thumb li img{
+		max-width: 38px;
+		max-height: 40px;
+	}
+	#contact h1{
+		text-align: center;
+		font-size: 23px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		font-family: 'Lilita One', cursive;
+		margin-bottom: 1.5rem;
+	}
+	.contact-box p{
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 10px;
+		max-width: 500;
+		margin-bottom: 1.2rem;
+	}
+	.container-box{
+		flex-grow: 1;
+		display: block;
+		width: 80%;
+		text-align: center;
+		margin: auto;
+	}
+	.box-1,.box-2{
+		display: block;
+		margin-left: 0;
+		padding-left: 0;
+		text-align: center;
+	}
+	.box-1 h2, .box-2 h2{
+		font-size: 18px;
+		font-weight: 500;
+		padding-top: 5px;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+		color: black;
+	}
+	.box-1 ul li{
+		list-style: none;
+		color: black;
+		font-size: 11px;
+		text-align: center;
+		padding-right: 25px;
+		letter-spacing: 0;
+		font-weight: 400;
+		padding-bottom: 3px;
+	}
+	.box-2 ol li{
+		list-style: none;
+		letter-spacing: 1px;
+		color: black;
+		font-size: 12px;
+		font-weight: 500;
+		padding-right: 53px;
+		margin-bottom: 1rem;
+	}
+	form{
+		margin-top: 1rem;
+		width: 83%;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		display: block;
+		border: 1px solid grey;
+		flex-grow: 1;
+		padding: 10px 0;
+		border-radius: 5px;
+		margin-bottom: 2rem;
+	}
+	form h3{
+		font-size: 15px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		font-family: 'Lilita One', cursive;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	form input{
+		justify-content: center;
+		align-items: center;
+		width: 12rem;
+		color: black;
+		letter-spacing: 1px;
+		font-size: 11px;
+		flex-grow: 1;
+		outline: none;
+		border: 1px solid grey;
+		margin: auto;
+		font-weight: 400;
+		margin-bottom: 1rem;
+		display: block;
+		border-radius: 3px;
+		padding: 7px 13px;
+	}
+	form .form-btn{
+		width: 65%;
+		font-size: 12px;
+		outline: none;
+		border: none;
+		border-radius: 8px;
+		letter-spacing: 2px;
+		font-weight: 500;
+		background: darkred;
+		color: white;
+		padding: 8px 13px;
+	}
+
+	#footer{
+		width: 100%;
+		padding: 20px 0;
+		flex-grow: 1;
+		scroll-behavior: smooth;
+		display: block;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.85),
+		rgb(0, 0, 0, 0.86)), url(./images/img9.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.footer-links h1{
+		font-size: 19px;
+		letter-spacing: 3px;
+		color: white;
+		padding-top: 10px;
+		margin-bottom: 1.5rem;
+		font-weight: 200;
+	}
+	.footer-links ul li{
+		margin-bottom: 5px;
+	}
+	.footer-links ul li a{
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-decoration: none;
+		color: white;
+	}
+	.footer-links ion-icon{
+		font-size: 20px;
+		height: 11px;
+		width: 11px;
+		padding-right: 5px;
+		color: white;
+	}
+	#footer-end{
+		padding: 12px 0;
+		width: 100%;
+		background: darkred;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#footer-end p{
+		text-align: center;
+		font-size: 12px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		color: white;
+	}
+}
+@media(max-width:360px){
+	.checkbtn{
+		display: block;
+		color: white;
+	}
+	.header{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		flex-grow: 1;
+		background: darkred;
+	}
+	.header ul{
+		width: 100%;
+		height: 60vh;
+		background: #000;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		z-index: 100;
+		transition: all .5s;
+	}
+	.header ul li{
+		display: block;
+		padding-top: 8px;
+		margin: 40px 0;
+		line-height: 16px;
+	}
+	.header ul li a{
+		font-size: 13px;
+		font-weight: 450;
+		letter-spacing: 4px;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	.header-icon{
+		display: none;
+	}
+	#main .container{
+		padding: 10px 0;
+		margin-top: 2rem;
+	}
+	.container{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+		width: 98%;
+		flex-grow: 1;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-box h1{
+		font-size: 12px;
+		font-weight: 400;
+		color: black;
+		margin-bottom: 5px;
+	}
+	.text-box h2{
+		font-size: 36px;
+		color: black;
+		letter-spacing: 4px;
+		font-weight: 450;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.text-box h3{
+		font-size: 25px;
+		color: black;
+		letter-spacing: 3px;
+		font-weight: 400;
+		margin-bottom: 2rem;
+	}
+	.text-box p{
+		width: 85%;
+		max-width: 500;
+		margin: auto;
+		text-align: left;
+		color: black;
+		font-weight: 450px;
+		font-size: 9px;
+		line-height: 18px;
+		margin-bottom: 1.7rem;
+	}
+	.textbox-btn{
+		width: 8rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 7px 20px;
+		border-radius: 20px;
+		cursor: pointer;
+		margin-bottom: 4.5rem;
+	}
+	.textbox-btn a{
+		font-size: 12px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.banner-img{
+		width:80%;
+		height: 40%;
+		padding-right: 0;
+		margin-right: 0;
+		margin: auto;
+	}
+	.banner-img img{
+		height: 265px;
+		width: 100%;
+		padding-right: 0;
+	}
+
+	#about-us h1{
+		text-align: center;
+		color: black;
+		padding-top: 5px;
+		font-size: 23px;
+		font-weight: 300;
+		margin-bottom: 1.5rem;
+		letter-spacing: 1px;
+	}
+	.about-box{
+		width: 87%;
+		flex-grow: 1;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.about-text{
+		width: 90%;
+		margin: auto;
+		max-width: 500;
+	}
+	.about-text p{
+		font-size: 9px;
+		color: black;
+		font-weight: 500;
+		text-align: left;
+		line-height: 17px;
+		margin-bottom: 1rem;
+	}
+	.about-btn{
+		width: 8rem;
+		outline: none;
+		border:none;
+		background: darkred;
+		padding: 8px 15px;
+		margin-bottom: 3.5rem;
+		border-radius: 20px;
+	}
+	.about-btn a{
+		font-size: 11px;
+		font-weight: 300;
+		color: white;
+		text-decoration: none;
+	}
+	.carasal{
+		width: 73%;
+		margin:auto;
+		flex-grow: 1;
+	}
+	.slideshow-container {
+	  max-width: 700px;
+	  max-height: 800px;
+	  position: relative;
+	  margin: auto;
+	}
+	.mySlides img{
+		padding-left: 10px;
+	}
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: -100%;
+	  padding: 15px;
+	  margin-top: -22px;
+	  color: black;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+	.next{
+		right: -10px;
+	}
+	.dot {
+	  cursor: pointer;
+	  height: 12px;
+	  justify-content: center;
+	  align-items: center;
+	  width: 12px;
+	  margin: 0 1px;
 	  background-color: darkred;
 	  border-radius: 50%;
 	  display: inline-block;
@@ -12742,7 +15489,7 @@ form .form-btn{
 	}
 	.header ul{
 		width: 100%;
-		height: 90vh;
+		height: 70vh;
 		background: #000;
 		top: 80px;
 		left: -100%;
@@ -12752,12 +15499,13 @@ form .form-btn{
 	}
 	.header ul li{
 		display: block;
-		margin: 45px 0;
-		line-height: 18px;
+		margin: 40px 0;
+		padding-top: 7px;
+		line-height: 17px;
 	}
 	.header ul li a{
-		font-size: 13px;
-		letter-spacing: 3px;
+		font-size: 12px;
+		letter-spacing: 2px;
 	}
 	#check:checked ~ ul{
 		left: 0;
@@ -12766,7 +15514,6 @@ form .form-btn{
 		display: none;
 	}
 	#main .container{
-		padding: 10px 0;
 		margin-top: 2rem;
 	}
 	.container{
@@ -12776,6 +15523,7 @@ form .form-btn{
 		align-content: center;
 		text-align: center;
 		width: 100%;
+		flex-grow: 1;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -12801,22 +15549,22 @@ form .form-btn{
 		margin-bottom: 2rem;
 	}
 	.text-box p{
-		width: 79%;
+		width: 84%;
 		max-width: 450;
 		margin: auto;
 		text-align: left;
 		color: black;
-		font-weight: 400px;
+		font-weight: 450px;
 		font-size: 8px;
-		line-height: 15px;
+		line-height: 18px;
 		margin-bottom: 1.5rem;
 	}
 	.textbox-btn{
-		width: 7rem;
+		width: 8rem;
 		outline: none;
 		border:none;
 		background: darkred;
-		padding: 6px 12px;
+		padding: 7px 14px;
 		border-radius: 20px;
 		cursor: pointer;
 		margin-bottom: 4.5rem;
@@ -12832,22 +15580,20 @@ form .form-btn{
 		height: 33%;
 		padding-right: 0;
 		margin-right: 0;
+		padding-left: 1rem;
 		margin: auto;
 	}
 	.banner-img img{
 		height: 250px;
-		width: 100%;
-	}
-	#about-us{
-		margin-top: 22rem;
+		width: 95%;
 	}
 	#about-us h1{
 		text-align: center;
 		color: black;
-		padding-top: 20px;
-		font-size: 23px;
+		padding-top: 5px;
+		font-size: 20px;
 		font-weight: 300;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1.3rem;
 		letter-spacing: 1px;
 	}
 	.about-box{
@@ -12861,17 +15607,17 @@ form .form-btn{
 		align-items: center;
 	}
 	.about-text{
-		width: 85%;
+		width: 88%;
 		margin: auto;
 		max-width: 500;
 	}
 	.about-text p{
-		font-size: 8px;
+		font-size: 9px;
 		color: black;
-		font-weight: 400;
+		font-weight: 450;
 		text-align: left;
-		line-height: 15px;
-		margin-bottom: 1.7rem;
+		line-height: 17px;
+		margin-bottom: 1.5rem;
 	}
 	.about-btn{
 		width: 7rem;
@@ -12904,26 +15650,26 @@ form .form-btn{
 	  position: absolute;
 	  top: 50%;
 	  width: -100%;
-	  padding: 15px;
+	  padding: 13px;
 	  margin-top: -22px;
 	  color: black;
 	  font-weight: bold;
-	  font-size: 18px;
+	  font-size: 15px;
 	  transition: 0.6s ease;
 	  border-radius: 0 3px 3px 0;
 	  user-select: none;
 	}
 	.mySlides img{
-		max-width: 70%;
+		max-width: 65%;
 		max-height: 150%;
 	}
 	.next{
-		right: 1rem;
+		right: -13px;
 	}
 	.dot {
 	  cursor: pointer;
 	  height: 10x;
-	  width: 13px;
+	  width: 12px;
 	  margin: 0 3px;
 	  background-color: darkred;
 	  border-radius: 50%;
